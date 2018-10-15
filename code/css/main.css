@@ -1,0 +1,121 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.container-fluid {
+
+    height: 10vh;
+
+}
+
+.h1,h2,h3 {
+    text-align: left;
+}
+
+.col,col-8 {
+    height: 8vh;
+    width: 10vh;
+    background-color: navy;
+    cursor: pointer;
+
+
+}
+
+button {
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: red;
+    padding: 4.7vh;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.show {
+    display: block;
+}
+
+
+/* ------ CREATED ------ */
+
+
+.img-center {
+    display: block;
+    margin: 0;
+    width: 42.5vh;
+    height: 40vh;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.blankContainer {
+
+    height: 10vh;
+
+}
+
+.blankSpace {
+
+    height: 50vh;
+}
+
+.seeMore {
+    display: flex;
+    align-items: flex-end;
+
+}
+
+.dropButton {
+    background-color: #3498DB;
+    color: white;
+    padding: 2.5vh;
+    border: none;
+
+}
+
+
+
+/* ------------------------- ID'S -------------------------- */
+
+/* ------ SEARCH ------ */
+
+#searchInfo {
+    height: 5vh;
+    background-color: pink;
+    width: 100vh;
+
+}
+
+#searchBar {
+    height: 5vh;
+    background-color: #0b2e13;
+
+}
+
+#searchButton {
+    height: 3vh;
+    width: 3vh;
+
+}
+
+/*------ RECOMMENDATIONS ------*/
+
+#recommendation1,#recommendation2,#recommendation3,#recommendation4,#city1,#city2,#city3,#city4 {
+
+    height: 30vh;
+    margin: 3vh;
+
+
+}

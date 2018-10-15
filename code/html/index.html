@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+<head>
+    <link rel="stylesheet" href="../../lib/bootstrap/bootstrap.css">
+    <meta charset="UTF-8">
+    <title>Interactive Historical Routes</title>
+    <script src="../../lib/bootstrap/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+</head>
+
+
+<body>
+
+<section class="container-fluid">
+    <section class="row">
+        <section class="col"><p>LOGIN</p></section>
+        <section class="col"><p>DESCUBRA ALGO NOVO</p></section>
+        <section class="col"><p>ESTATISTICAS</p></section>
+
+        <section class="col-8" style="background-color: brown">
+            <button onclick="onClick()" class="dropButton">Dropdown</button>
+                <section class="dropdown-content">
+                    <p>Hello</p>
+                    <p>World</p>
+                    <p>!</p>
+                </section>
+            </section>
+        </section>
+    </section>
+</section>
+
+<section class="blankContainer"></section>
+<section class="container-fluid" id="searchInfo">
+    <section class="row">
+        <section class="col" id="searchBar">
+        </section>
+        <section class="col-1" id="search" style="background-color: #491217">
+        </section>
+    </section>
+</section>
+
+<section class="blankContainer"></section>
+
+<h3>CLOSE TO YOU</h3>
+
+<section class="container-fluid">
+    <section class="row">
+        <section class="col" id="recommendation1" style="background-color: pink">
+            <img class="img-center" src="https://www.w3schools.com/w3css/img_lights.jpg">
+        </section>
+        <section class="col" id="recommendation2" style="background-color: pink">
+            <img class="img-center" src="https://www.w3schools.com/w3css/img_lights.jpg">
+        </section>
+        <section class="col" id="recommendation3" style="background-color: pink">
+            <img class="img-center" src="https://www.w3schools.com/w3css/img_lights.jpg">
+        </section>
+        <section class="col" id="recommendation4" style="background-color:pink">
+            <img class="img-center" src="https://www.w3schools.com/w3css/img_lights.jpg">
+        </section>
+        <section class="seeMore">
+            <section class="col-md-12 m-md-tb-3">
+                <!-- HYPERLINK TO ANOTHER PAGE <a href="/node/1420" class="f-alpha btn-rigth-chevron" hreflang="en"> -->
+                <p>See More ...</p>
+            </section>
+        </section>
+    </section>
+</section>
+
+<section class="blankSpace"></section>
+
+<h3>CITIES TO VISIT</h3>
+
+<section class="container-fluid">
+    <section class="row">
+        <section class="col" id="city1" style="background-color: pink">
+            <img class="img-center" src="https://www.w3schools.com/w3css/img_lights.jpg">
+        </section>
+        <section class="col" id="city2" style="background-color: pink">
+            <img class="img-center" src="https://www.w3schools.com/w3css/img_lights.jpg">
+        </section>
+        <section class="col" id="city3" style="background-color: pink">
+            <img class="img-center" src="https://www.w3schools.com/w3css/img_lights.jpg">
+        </section>
+        <section class="col" id="city4" style="background-color:pink">
+            <img class="img-center" src="https://www.w3schools.com/w3css/img_lights.jpg">
+        </section>
+        <section class="seeMore">
+            <section class="col-md-12 m-md-tb-3">
+                <!-- HYPERLINK TO ANOTHER PAGE <a href="/node/1420" class="f-alpha btn-rigth-chevron" hreflang="en"> -->
+                <p>See More ...</p>
+            </section>
+        </section>
+    </section>
+</section>
+
+<section class="blankSpace"></section>
+<section class="blankSpace"></section>
+
+
+<script>
+    /* When the user clicks on the button,
+    toggle between hiding and showing the dropdown content */
+    function onClick() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropButton')) {
+
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>
+
+
+
+
+
+</body>
+</html>
