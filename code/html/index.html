@@ -7,28 +7,17 @@
     <title>Interactive Historical Routes</title>
     <script src="../../lib/bootstrap/bootstrap.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <script src="../../lib/jquery/jquery-3.3.1.js"></script>
+
+
+
+    <section id="header"></section>
+    
+
 </head>
 
 
 <body>
-
-<section class="container-fluid">
-    <section class="row">
-        <section class="col"><p>LOGIN</p></section>
-        <section class="col"><p>DESCUBRA ALGO NOVO</p></section>
-        <section class="col"><p>ESTATISTICAS</p></section>
-
-        <section class="col-8" style="background-color: brown">
-            <button onclick="onClick()" class="dropButton">Dropdown</button>
-                <section class="dropdown-content">
-                    <p>Hello</p>
-                    <p>World</p>
-                    <p>!</p>
-                </section>
-            </section>
-        </section>
-    </section>
-</section>
 
 <section class="blankContainer"></section>
 <section class="container-fluid" id="searchInfo">
@@ -98,32 +87,12 @@
 <section class="blankSpace"></section>
 
 
+<footer id="footer"></footer>
+
 <script>
-    /* When the user clicks on the button,
-    toggle between hiding and showing the dropdown content */
-    function onClick() {
-        document.getElementById("myDropdown").classList.toggle("show");
-    }
-
-    // Close the dropdown if the user clicks outside of it
-    window.onclick = function(event) {
-        if (!event.target.matches('.dropButton')) {
-
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-                var openDropdown = dropdowns[i];
-                if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                }
-            }
-        }
-    }
+    $("#header").load("header.html");
+    $("#footer").load("footer.html")
 </script>
-
-
-
-
 
 </body>
 </html>

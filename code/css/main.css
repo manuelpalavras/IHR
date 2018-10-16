@@ -1,7 +1,6 @@
 html, body {
     height: 100%;
-    margin: 0;
-    padding: 0;
+    padding: 1vh;
     background-color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;
@@ -12,44 +11,26 @@ html, body {
 .container-fluid {
 
     height: 10vh;
+    display: block;
 
 }
 
-.h1,h2,h3 {
+.h1, h2, h3 {
     text-align: left;
 }
 
-.col,col-8 {
-    height: 8vh;
-    width: 10vh;
+.col, col-8 {
+    height: 7vh;
+    width: 7vh;
     background-color: navy;
     cursor: pointer;
-
-
+    text-align: start;
 }
 
-button {
-    cursor: pointer;
-}
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: red;
-    padding: 4.7vh;
-
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-.show {
-    display: block;
-}
 
 
 /* ------ CREATED ------ */
-
 
 .img-center {
     display: block;
@@ -77,15 +58,10 @@ button {
 
 }
 
-.dropButton {
-    background-color: #3498DB;
-    color: white;
-    padding: 2.5vh;
-    border: none;
-
+.card-footer {
+    background-color: magenta;
+    height: 40vh;
 }
-
-
 
 /* ------------------------- ID'S -------------------------- */
 
@@ -112,10 +88,13 @@ button {
 
 /*------ RECOMMENDATIONS ------*/
 
-#recommendation1,#recommendation2,#recommendation3,#recommendation4,#city1,#city2,#city3,#city4 {
+#recommendation1, #recommendation2, #recommendation3, #recommendation4, #city1, #city2, #city3, #city4 {
 
     height: 30vh;
     margin: 3vh;
 
-
 }
+
+
+
+
