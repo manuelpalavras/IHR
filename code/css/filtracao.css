@@ -1,0 +1,29 @@
+nav{
+    background-color:lightsteelblue;
+    width: 15vh;
+    height: 100vh;
+
+
+
+}
+
+
+
+img{
+    width: 100%;
+    height:100%;
+}
+p{
+    font-size:2.5vh;
+    text-align: justify;
+}
+
+.col-sm-2{
+
+    text-align: center;
+}
+
+nav.col-sm-2 {
+    text-align: left;
+    font-size: larger;
+}
