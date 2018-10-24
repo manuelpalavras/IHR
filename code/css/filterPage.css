@@ -1,13 +1,8 @@
 nav{
-    background-color:lightsteelblue;
+    background-color:#333333;
     width: 15vh;
     height: 100vh;
-
-
-
 }
-
-
 
 img{
     width: 100%;
@@ -19,11 +14,22 @@ p{
 }
 
 .col-sm-2{
-
     text-align: center;
 }
 
 nav.col-sm-2 {
     text-align: left;
-    font-size: larger;
+    color: white;
 }
+
+.opcoes {
+    font-size: 4vh;
+}
+
+table, th, td {
+    padding: 5px;
+}
+table {
+    border-spacing: 15px;
+}
+
