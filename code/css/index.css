@@ -1,0 +1,17 @@
+.row {
+    height: 50vh;
+    width: 100%
+}
+
+.figure img {
+
+    height: 180px;
+    width: 300px;
+
+}
+
+.smallblankContainer {
+    height: 15vh;
+
+}
+
