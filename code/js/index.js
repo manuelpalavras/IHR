@@ -1,1 +1,2 @@
-let server = require('http');
+let server = require('http'); //http is a module
+
