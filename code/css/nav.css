@@ -1,4 +1,4 @@
-button {
+a , button {
     width: 10%;
     height: 10vh;
     -webkit-border-radius: 0 !important;
@@ -7,10 +7,15 @@ button {
 }
 
 .nav {
-    background-color: black;
+    background-color: #343a40;
 }
 
 .btn-dark {
+
     font-size: large;
+    border-style: none;
 }
 
+#home {
+    width: 100%;
+}

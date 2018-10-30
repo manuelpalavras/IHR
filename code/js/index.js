@@ -1,5 +1,5 @@
 function seeMore() {
 
-    $("#add_message").load("nav.html");
+    $("#add_message").load("../html/nav.html");
 
 }
