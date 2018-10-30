@@ -1,5 +1,1 @@
-function seeMore() {
-
-    $("#add_message").load("../html/nav.html");
-
-}
+let server = require('http');
