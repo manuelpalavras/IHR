@@ -1,0 +1,21 @@
+a , button {
+    width: 10%;
+    height: 10vh;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+}
+
+.nav {
+    background-color: #343a40;
+}
+
+.btn-dark {
+
+    font-size: large;
+    border-style: none;
+}
+
+#home {
+    width: 100%;
+}
