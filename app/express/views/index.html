@@ -6,6 +6,8 @@
 
     <meta charset="UTF-8">
     <script src="lib/jquery/jquery-3.3.1.js"></script>
+
+
     <title>INTERACTIVE HISTORICAL ROUTES</title>
 
 </head>
@@ -14,7 +16,17 @@
 
 <header>
     <section id="nav"></section>
-    <h1><p>INTERACTIVE HISTORICAL ROUTES</p></h1>
+    <h1>
+    <section class="col-sm-12">
+        <div class="smallblankContainer"></div>
+        INTERACTIVE HISTORICAL ROUTES
+        <div id="search" class="row col-sm-12"></div>
+
+    </section>
+
+
+    </h1>
+
 </header>
 
 <section class="smallblankContainer"></section>
@@ -158,8 +170,12 @@
 <script>
     $("#nav").load("nav.html");
 </script>
+<script>
+    $("#search").load("searchBar.html");
+</script>
 
 <link rel="stylesheet" type="text/css" href="./stylesheets/index.css">
+
 
 
 </body>

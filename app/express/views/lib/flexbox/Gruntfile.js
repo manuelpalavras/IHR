@@ -41,7 +41,7 @@ module.exports = function(grunt) {
     uglify: {
       release: {
         files: {
-          'js/index.js': 'src/js/index.js'
+          'js/index.js': 'src/js/locationInfo.js'
         }
       }
     },

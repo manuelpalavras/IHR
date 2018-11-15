@@ -14,7 +14,8 @@ h1 {
 
 .figure img {
     height: 40vh;
-    width: 50vh;
+    width: 100%;
+    display: block;
 
 }
 
@@ -29,9 +30,15 @@ h1 {
     display: table;
     width: 100%;
     vertical-align: middle;
-    
 }
 
 p {
-    display:table-cell; vertical-align:middle
+    display:table-cell;
+    vertical-align:middle;
 }
+
+h1 .row {
+    height: 25%;
+
+}
+
