@@ -1,5 +1,4 @@
-
-
+const fs = require('fs');
 
 function postLocation(latitude,longitude, cb) {
 
@@ -8,9 +7,10 @@ function postLocation(latitude,longitude, cb) {
     };
 
     let json = JSON.stringify(coordinates);
-    let fs = require('fs');
+
     fs.writeFile('public/json/locationInfo.json', json, 'utf8', (err,res) =>{
-       return
+       if(err)
+           res.send(err);
     });
     cb(null,null);
 }

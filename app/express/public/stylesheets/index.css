@@ -1,22 +1,22 @@
-
+h2 {
+    margin: auto;
+}
 h1 {
     color: white;
     text-align: center;
     vertical-align: center;
-    background-color: black;
+    background-color: #343a40;
     height: 20vh;
 }
 
 .row {
     height: 50vh;
-    width: 100%
+    child-align: middle;
 }
 
 .figure img {
     height: 40vh;
     width: 100%;
-    display: block;
-
 }
 
 .smallblankContainer {
@@ -42,3 +42,14 @@ h1 .row {
 
 }
 
+#search {
+    margin: auto;
+}
+
+.col-sm-3 {
+    margin: auto;
+}
+
+.figure {
+    display: block;
+}

@@ -21,11 +21,13 @@ app.use('/js',express.static(path.join(__dirname, 'public/js')));
  *  Routers
  */
 
-const locationRouter = require('./routes/LocationRouter');
+const locationRouter = require('./routes/locationRouter');
+const informationRouter = require('./routes/informationRouter')
 
 
 
 app.use('/location', locationRouter);
+app.use('/information', informationRouter);
 
 
 

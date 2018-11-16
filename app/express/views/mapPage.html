@@ -3,32 +3,39 @@
 <head>
 
     <link rel="stylesheet" href="lib/bootstrap/bootstrap.css">
-    <script src="./javascripts/locationInfo.js"></script>
+    <script src="./js/locationInfo.js"></script>
     <script src="lib/bootstrap/bootstrap.js"></script>
     <script src="lib/jquery/jquery-3.3.1.js"></script>
     <meta charset="UTF-8">
-    <script src="./lib/leaflet/leaflet.js"></script>
-    <link rel="stylesheet" type="text/css" href="./lib/leaflet/leaflet.css" />
     <script type="text/javascript">
-        function initmap(){
-            var map1 = L.map('map');
-            //map1.setView([38.642433, -90.255372]),9); //Thanks!
-            map1.setView([latitude, longitude],15);
+        function initmap() {
+            $.get('/information/getJSONFile/locationInfo.json',
+                (coords) => {
+                    console.log((coords));
+                    let map1 = L.map('map');
+                    //map1.setView([38.642433, -90.255372]),9); //Thanks!
+                    map1.setView([coords.Latitude, coords.Longitude], 15);
+                    L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map1);
+                    // add an OpenStreetMap tile layer
+                    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+                        attribution: '&amp;copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                    }).addTo(map1);
+                }
+            );
 
-            L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map1);
-
-            // add an OpenStreetMap tile layer
-            L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-                attribution: '&amp;copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-            }).addTo(map1);
+            // let coords = ($.get('/information/getJSONFile/locationInfo.json'));
+            // console.log((coords));
+            // let map1 = L.map('map');
+            // //map1.setView([38.642433, -90.255372]),9); //Thanks!
+            // map1.setView([coords.Latitude, coords.Longitude], 15);
+            // L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map1);
+            // // add an OpenStreetMap tile layer
+            // L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+            //     attribution: '&amp;copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+            // }).addTo(map1);
         }
     </script>
-    <style>
-        #map{
-            height: 500px;
-            width: 500px;
-        }
-    </style>
+
     <title>Title</title>
 </head>
 <body onload="initmap()">
@@ -73,16 +80,13 @@
 </section>
 
 
-
 <script>
     $("#nav").load("nav.html");
 </script>
 
 
-
-
 <link rel="stylesheet" type="text/css" href="./stylesheets/mapPage.css">
-<script src="../views/lib/leaflet/leaflet.js"></script>
-<link rel="stylesheet" type="text/css" href="../views/lib/leaflet/leaflet.css"/>
+<script src="lib/leaflet/leaflet.js"></script>
+<link rel="stylesheet" type="text/css" href="lib/leaflet/leaflet.css"/>
 </body>
 </html>

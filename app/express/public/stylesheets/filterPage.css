@@ -1,7 +1,7 @@
-nav{
-    background-color:#333333;
+#filter{
+    background-color: #343a40;
     width: 15vh;
-    height: 100vh;
+    height: 100%;
 }
 
 img{
@@ -9,7 +9,6 @@ img{
     height:100%;
 }
 p{
-    font-size:2.5vh;
     text-align: justify;
 }
 
@@ -20,10 +19,6 @@ p{
 nav.col-sm-2 {
     text-align: left;
     color: white;
-}
-
-.opcoes {
-    font-size: 4vh;
 }
 
 table, th, td {

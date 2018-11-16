@@ -1,5 +1,5 @@
 
-let location = require('../services/LocationService')
+let location = require('../services/locationService')
 let express = require('express');
 
 
@@ -20,7 +20,6 @@ router.post('/coordinates',(req, res ,next) => {
             res.send(result)
     })
 });
-
 
 
 module.exports = router;
