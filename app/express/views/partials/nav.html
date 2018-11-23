@@ -1,0 +1,23 @@
+<script src="../lib/bootstrap/bootstrap.js"></script>
+<link rel="stylesheet" href="../lib/bootstrap/bootstrap.css"/>
+<link rel="stylesheet" href="./stylesheets/nav.css">
+<script rel="script" src="./js/locationInfo.js"></script>
+<script rel="script" src="../lib/jquery/jquery-3.3.1.js"></script>
+
+<div onload="getLocation()" class="btn-group nav" role="group" aria-label="Button group with nested dropdown">
+
+    <a href="../index.html">
+        <button type="button" id="home" href="index.html" class="btn btn-dark">HOME</button>
+    </a>
+    <button type="button" class="btn btn-dark">LOGIN</button>
+    <button type="button" class="btn btn-dark">ESTATISTICAS</button>
+    <button type="button" class="btn btn-dark">ALGO NOVO</button>
+    <button type="button" id="location" class="btn btn-dark" onclick="getLocation()">
+        LOCALIZAÇÃO ATUAL
+    </button>
+    <button id="search" class="topnav btn btn-dark">
+        <form action="">
+            <input type="text" placeholder="        Search for your favorite routes!! " name="search">
+        </form>
+    </button>
+</div>

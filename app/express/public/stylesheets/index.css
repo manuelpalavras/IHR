@@ -1,55 +1,28 @@
-h2 {
-    margin: auto;
+body, input {
+    background-color: #e7e5b8
 }
-h1 {
-    color: white;
+
+h1, h2, p {
+    font-weight: bold;
     text-align: center;
-    vertical-align: center;
-    background-color: #343a40;
-    height: 20vh;
+    width: 100%;
+    color: black;
+    font-family: "Bookman Old Style";
 }
 
 .row {
-    height: 50vh;
     child-align: middle;
+    margin-right: 0;
+    margin-left: 0;
 }
 
 .figure img {
-    height: 40vh;
-    width: 100%;
-}
-
-.smallblankContainer {
-    height: 15vh;
-
-}
-
-h1 {
-    height: 50vh;
-    text-align: center;
-    display: table;
-    width: 100%;
+    margin-top: 8%;
     vertical-align: middle;
+    height: 40vh;
 }
 
-p {
-    display:table-cell;
-    vertical-align:middle;
-}
 
-h1 .row {
-    height: 25%;
-
-}
-
-#search {
-    margin: auto;
-}
-
-.col-sm-3 {
-    margin: auto;
-}
-
-.figure {
-    display: block;
+#routes , #cidades,#PoI {
+    height: 45vh;
 }

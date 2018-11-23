@@ -13,9 +13,9 @@ app.set('view engine', 'html');
 app.use('/', express.static("views"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
-app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
-app.use('/js',express.static(path.join(__dirname, 'public/js')));
+
+
 
 /**
  *  Routers

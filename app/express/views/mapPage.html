@@ -13,75 +13,35 @@
                 (coords) => {
                     console.log((coords));
                     let map1 = L.map('map');
-                    //map1.setView([38.642433, -90.255372]),9); //Thanks!
+                    console.log(coords.Latitude);
+                    //map1.setView([31.633004916540266, -7.997800602958748], 9); //Thanks!
                     map1.setView([coords.Latitude, coords.Longitude], 15);
                     L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map1);
                     // add an OpenStreetMap tile layer
                     L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
                         attribution: '&amp;copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                     }).addTo(map1);
-                }
-            );
-
-            // let coords = ($.get('/information/getJSONFile/locationInfo.json'));
-            // console.log((coords));
-            // let map1 = L.map('map');
-            // //map1.setView([38.642433, -90.255372]),9); //Thanks!
-            // map1.setView([coords.Latitude, coords.Longitude], 15);
-            // L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map1);
-            // // add an OpenStreetMap tile layer
-            // L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-            //     attribution: '&amp;copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-            // }).addTo(map1);
-        }
+        })}
     </script>
 
-    <title>Title</title>
+    <title>Interactive Historical Routes</title>
 </head>
 <body onload="initmap()">
 
 <section id="nav"></section>
 
-<section class="container-fluid">
+<section class="container-fluid" id="content">
     <div class="row">
-        <div class="col-sm-3">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="box">
-                        <h4>Assalto ao Castelo!</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="box">
-                        <img src="https://bit.ly/2OOX3ot">
-                        <span style="font-weight: bold">  Rossio</span>
-                    </div>
-                    <hr>
-                    <div class="box">
-                        <img src="https://bit.ly/2SivHoP">
-                        <span style="font-weight: bold">  Martim-Moniz</span>
-                    </div>
-                    <hr>
-                    <div class="box">
-                        <img src="https://bit.ly/2Jg1SRG">
-                        <span style="font-weight: bold">  Castelo de São Jorge</span>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <div id="map" class="col-sm-9">
-
-        </div>
+        <div class="col-sm-2" id="PoI"></div>
+        <map id="map" class="col-sm-10" style="position: relative"></map>
+        <div class="col-sm-10" style="background-color: crimson; height: 10vh"></div>
     </div>
-
 </section>
 
 
 <script>
-    $("#nav").load("nav.html");
+    $("#nav").load("./partials/nav.html");
+    $("#PoI").load("./partials/routesImage.html");
 </script>
 
 

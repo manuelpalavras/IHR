@@ -1,38 +1,28 @@
-.col-sm-3 {
-    background-color: lightsteelblue;
-    width: 15vh;
-    height: 100%;
+.col-sm-2 {
+    background-color: #343a40;
 }
 
-.col-sm-9 {
-    height: 100%;
-}
-
-img {
-    width: 32vh;
-    height: 22vh;
-    margin-right: 2vh;
-}
-.col-sm-8{
-    margin-top: 2vh;
+h4 {
     text-align: center;
-}
-.box {
-    margin-top: 2vh;
-    display: flex;
-    align-items:center;
-
+    color: white;
 }
 
-#map {
-    height: 85vh;
-    width: 50vh;
-
+#content{
+    min-height: 90vh;
 }
 
+#content > div.row , #content > .row > map {
+    min-height: 90vh;
+}
 
+#content > .row , #content > .row > map {
+    height: 100%;
+}
 
+div.col-sm-2 > section.row , section.container.col-sm-12 {
+    height: 100%;
+}
 
-h4{
-
+section.container.col-sm-12 > div , section.container.col-sm-12 > div > figure {
+    height: 20%;
 }

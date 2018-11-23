@@ -12,7 +12,6 @@ router.get('/getJSONFile/:file', (req, res, next) => {
         if (err)
             next();
         else {
-            console.log(result);
             res.send(result);
         }
     });
