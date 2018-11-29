@@ -1,16 +1,20 @@
-<h4>Assalto ao Castelo!</h4>
+<h4 id="title"></h4>
 
 <section class="row">
     <section class="container col-sm-12" id="PoI">
-        <div></div>
-        <div></div>
-        <div></div>
     </section>
 </section>
 
-
+<script src="../lib/jquery/jquery-3.3.1.js"></script>
 <script>
-    $("#PoI > div").each(function () {
-        $(this).load("./partials/indexImage.html");
+    $.get('/routes/25 de abril', (route) => {
+        $("#title").html(route.Nome);
+
+        for (let i = 0; i < route.PoI.length; i++) {
+            $("#PoI").append("<div></div>");
+            $("#PoI > div").load("./partials/indexImage.html");
+        }
     });
+
+
 </script>

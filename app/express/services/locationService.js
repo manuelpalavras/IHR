@@ -2,7 +2,7 @@ const fs = require('fs');
 
 function postLocation(latitude,longitude, cb) {
 
-    let coordinates = {
+    const coordinates = {
     Latitude: latitude, Longitude: longitude
     };
 
@@ -16,7 +16,6 @@ function postLocation(latitude,longitude, cb) {
 }
 module.exports = {
     postLocation
-
 };
 
 

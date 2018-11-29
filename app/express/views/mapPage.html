@@ -3,25 +3,25 @@
 <head>
 
     <link rel="stylesheet" href="lib/bootstrap/bootstrap.css">
-    <script src="./js/locationInfo.js"></script>
     <script src="lib/bootstrap/bootstrap.js"></script>
     <script src="lib/jquery/jquery-3.3.1.js"></script>
     <meta charset="UTF-8">
     <script type="text/javascript">
         function initmap() {
-            $.get('/information/getJSONFile/locationInfo.json',
-                (coords) => {
-                    console.log((coords));
-                    let map1 = L.map('map');
-                    console.log(coords.Latitude);
-                    //map1.setView([31.633004916540266, -7.997800602958748], 9); //Thanks!
-                    map1.setView([coords.Latitude, coords.Longitude], 15);
-                    L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map1);
-                    // add an OpenStreetMap tile layer
-                    L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-                        attribution: '&amp;copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-                    }).addTo(map1);
-        })}
+            $.get('/information/getJSONFile/locationInfo.json', (coords) => {
+                let center = JSON.parse(coords);
+                let map1 = L.map('map');
+                //map1.setView([31.633004916540266, -7.997800602958748], 9); //Thanks!
+                map1.setView([center.Latitude, center.Longitude], 15);
+                L.marker([(center.Latitude), (center.Longitude)]).addTo(map1);
+                L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map1);
+                // add an OpenStreetMap tile layer
+                L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+                    attribution: '&amp;copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map1);
+
+            })
+        }
     </script>
 
     <title>Interactive Historical Routes</title>
@@ -34,7 +34,6 @@
     <div class="row">
         <div class="col-sm-2" id="PoI"></div>
         <map id="map" class="col-sm-10" style="position: relative"></map>
-        <div class="col-sm-10" style="background-color: crimson; height: 10vh"></div>
     </div>
 </section>
 
@@ -42,6 +41,7 @@
 <script>
     $("#nav").load("./partials/nav.html");
     $("#PoI").load("./partials/routesImage.html");
+
 </script>
 
 

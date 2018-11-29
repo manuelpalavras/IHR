@@ -22,12 +22,14 @@ app.use(express.static(path.join(__dirname, 'public')));
  */
 
 const locationRouter = require('./routes/locationRouter');
-const informationRouter = require('./routes/informationRouter')
+const informationRouter = require('./routes/informationRouter');
+const mainRouter = require('./routes/mainRouter');
 
 
 
 app.use('/location', locationRouter);
 app.use('/information', informationRouter);
+app.use('/',mainRouter);
 
 
 

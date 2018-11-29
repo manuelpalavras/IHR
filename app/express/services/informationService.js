@@ -9,7 +9,7 @@ function getJSONFile(path, cb) {
             //let buf = Buffer.from(data);
             // console.log(data);
             content = JSON.parse(data);
-            cb(null, content);
+            cb(null, data);
         }
     });
 }

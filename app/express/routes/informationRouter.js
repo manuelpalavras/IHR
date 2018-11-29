@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const informationService = require('../services/informationService.js');
-const jquery = require('../views/lib/jquery/jquery-3.3.1')
+const jquery = require('../views/lib/jquery/jquery-3.3.1');
 
 router.get('/getJSONFile/:file', (req, res, next) => {
 
