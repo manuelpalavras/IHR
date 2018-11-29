@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8503975b-6b17-4c99-8aba-8f4432fdf259" name="Default Changelist" comment="mapa feito , coordenadas guardas em Json">
+      <change afterPath="$PROJECT_DIR$/app/express/views/partials/filterImage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/express/public/json/locationInfo.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/express/public/json/locationInfo.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/express/public/stylesheets/filterPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/express/public/stylesheets/filterPage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/views/filterImage.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/express/views/filterPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/express/views/filterPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/views/partials/routesImage.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/express/views/partials/routesImage.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -58,38 +61,40 @@
     <session id="-1813550123">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="8" />
-          <entry key="html" value="12" />
-          <entry key="js" value="2" />
+          <entry key="css" value="9" />
+          <entry key="html" value="20" />
+          <entry key="js" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="8" />
-          <entry key="HTML" value="12" />
-          <entry key="JavaScript" value="2" />
+          <entry key="CSS" value="9" />
+          <entry key="HTML" value="20" />
+          <entry key="JavaScript" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="376" />
-          <entry key="html" value="729" />
+          <entry key="html" value="1927" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="376" />
-          <entry key="HTML" value="729" />
+          <entry key="CSS" value="380" />
+          <entry key="HTML" value="1923" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -99,10 +104,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/express/public/stylesheets/filterPage.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/express/views/filterPage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-118">
-              <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+            <state relative-caret-position="-136">
+              <caret line="80" selection-start-line="80" selection-end-line="82" selection-end-column="35" />
               <folding>
                 <element signature="n#nav#0;n#section#0;n#section#1;n#body#0;n#html#0;n#!!top" />
               </folding>
@@ -110,20 +124,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/express/public/stylesheets/filterPage.css">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/express/views/partials/routesImage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+            <state relative-caret-position="194">
+              <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/express/views/filterImage.html">
+        <entry file="file://$PROJECT_DIR$/app/express/views/partials/filterImage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-17">
-              <caret line="2" column="56" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="56" />
+            <state>
+              <caret lean-forward="true" />
             </state>
           </provider>
         </entry>
@@ -146,7 +160,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/code/css/dropdown.css" />
         <option value="$PROJECT_DIR$/code/css/main.css" />
         <option value="$PROJECT_DIR$/code/html/filterPage.html" />
         <option value="$PROJECT_DIR$/code/html/mapPage.html" />
@@ -184,7 +197,6 @@
         <option value="$PROJECT_DIR$/app/express/views/nav.html" />
         <option value="$PROJECT_DIR$/app/express/views/partials/indexImage.html" />
         <option value="$PROJECT_DIR$/app/express/views/demo.html" />
-        <option value="$PROJECT_DIR$/app/express/views/partials/routesImage.html" />
         <option value="$PROJECT_DIR$/app/express/public/stylesheets/searchBar.css" />
         <option value="$PROJECT_DIR$/app/express/views/partials/searchBar.html" />
         <option value="$PROJECT_DIR$/app/express/views/partials/nav.html" />
@@ -194,9 +206,11 @@
         <option value="$PROJECT_DIR$/app/express/public/stylesheets/mapPage.css" />
         <option value="$PROJECT_DIR$/app/express/views/mapPage.html" />
         <option value="$PROJECT_DIR$/app/express/views/pussyImage.html" />
-        <option value="$PROJECT_DIR$/app/express/views/filterPage.html" />
-        <option value="$PROJECT_DIR$/app/express/views/filterImage.html" />
         <option value="$PROJECT_DIR$/app/express/public/stylesheets/filterPage.css" />
+        <option value="$PROJECT_DIR$/app/express/views/partials/routesImage.html" />
+        <option value="$PROJECT_DIR$/app/express/views/filterImage.html" />
+        <option value="$PROJECT_DIR$/app/express/views/filterPage.html" />
+        <option value="$PROJECT_DIR$/app/express/views/partials/filterImage.html" />
       </list>
     </option>
   </component>
@@ -211,6 +225,122 @@
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
+      <path value="$PROJECT_DIR$/app/express/node_modules/accepts/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/acorn-globals/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/acorn/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/align-text/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/amdefine/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/array-flatten/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/asap/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/basic-auth/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/body-parser/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/bson/browser_build/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/bson/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/bytes/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/camelcase/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/center-align/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/character-parser/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/clean-css/node_modules/commander/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/clean-css/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/cliui/node_modules/wordwrap/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/cliui/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/commander/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/constantinople/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/content-disposition/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/content-type/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/cookie-parser/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/cookie-signature/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/cookie/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/css-parse/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/css-stringify/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/css/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/debug/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/decamelize/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/depd/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/destroy/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/ee-first/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/encodeurl/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/escape-html/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/etag/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/express/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/finalhandler/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/forwarded/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/fresh/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/graceful-readlink/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/http-errors/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/iconv-lite/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/inherits/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/ipaddr.js/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/is-buffer/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/is-promise/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/jade/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/js-tokens/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/jstransformer/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/kind-of/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/lazy-cache/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/longest/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/loose-envify/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/media-typer/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/memory-pager/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/merge-descriptors/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/methods/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/mime-db/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/mime-types/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/mime/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/minimist/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/mkdirp/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/mongodb-core/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/mongodb/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/morgan/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/ms/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/negotiator/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/object-assign/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/on-finished/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/on-headers/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/optimist/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/parseurl/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/path-to-regexp/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/promise/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/prop-types/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/proxy-addr/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/qs/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/range-parser/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/raw-body/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/react/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/repeat-string/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/require_optional/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/require_optional/test/nestedTest/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/resolve-from/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/right-align/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/safe-buffer/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/safer-buffer/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/saslprep/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/scheduler/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/semver/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/send/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/serve-static/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/setprototypeof/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/source-map/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/sparse-bitfield/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/statuses/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/transformers/node_modules/is-promise/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/transformers/node_modules/promise/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/transformers/node_modules/source-map/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/transformers/node_modules/uglify-js/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/transformers/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/type-is/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/uglify-js/node_modules/source-map/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/uglify-js/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/uglify-to-browserify/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/unpipe/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/utils-merge/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/vary/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/void-elements/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/window-size/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/with/node_modules/acorn/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/with/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/wordwrap/package.json" />
+      <path value="$PROJECT_DIR$/app/express/node_modules/yargs/package.json" />
       <path value="$PROJECT_DIR$/app/express/package.json" />
       <path value="$PROJECT_DIR$/app/express/views/lib/flexbox/package.json" />
     </packageJsonPaths>
@@ -218,7 +348,7 @@
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/app/express/package.json" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1382" />
@@ -226,11 +356,10 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -283,6 +412,65 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="IHR" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="IHR" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="IHR" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="express" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="IHR" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="express" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="public" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="IHR" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="express" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="public" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="stylesheets" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="IHR" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="express" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="routes" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="IHR" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="express" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="IHR" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="express" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="partials" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -301,11 +489,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Tiago Ferreira\Desktop\Git\IHRProject\IHR\app\express\views\partials" />
       <recent name="C:\Users\mword\Documents\GitHub\IHR\app\express\views\partials" />
       <recent name="C:\Users\mword\Documents\GitHub\IHR\app\express\public" />
       <recent name="C:\Users\mword\Documents\GitHub\IHR\app\express" />
       <recent name="C:\Users\mword\Documents\GitHub\IHR\app\express\public\json" />
-      <recent name="C:\Users\mword\Documents\GitHub\IHR\app\express\views" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -376,6 +564,8 @@
       <workItem from="1542962576239" duration="17176000" />
       <workItem from="1542987631128" duration="7150000" />
       <workItem from="1543479666903" duration="1950000" />
+      <workItem from="1543494537559" duration="730000" />
+      <workItem from="1543501437697" duration="12098000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1540905157416</created>
@@ -444,7 +634,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="224142000" />
+    <option name="totallyTimeSpent" value="236970000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -455,14 +645,14 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32750398" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32459018" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32459018" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4880763" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.3290938" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3290938" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" weight="0.3290938" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.21920905" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -526,13 +716,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/javascript/nodejs/library/node-globals-stub.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="303" column="4" selection-start-line="303" selection-start-column="4" selection-end-line="303" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/express/views/lib/bootstrap/bootstrap.bundle.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-9264" />
@@ -545,8 +728,8 @@
     <entry file="file://$PROJECT_DIR$/app/express/routes/users.js" />
     <entry file="file://$PROJECT_DIR$/app/express/routes/index.js" />
     <entry file="file://$PROJECT_DIR$/app/express/views/lib/leaflet/leaflet.js.map">
-      <provider editor-type-id="sourcemapFileViewerProvider" />
       <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="sourcemapFileViewerProvider" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/express/views/lib/leaflet/leaflet.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -643,16 +826,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/express/public/controller/MapController.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/express/public/controller/FilterController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/express/public/controller/MapController.js" />
+    <entry file="file://$PROJECT_DIR$/app/express/public/controller/FilterController.js" />
     <entry file="file://$PROJECT_DIR$/app/express/node_modules/react/umd/react.development.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -698,13 +873,6 @@
     <entry file="file://$PROJECT_DIR$/app/express/public/stylesheets/style.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/express/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="44" column="16" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/express/views/partials/searchBar.html" />
     <entry file="file://$PROJECT_DIR$/app/express/public/stylesheets/searchBar.css" />
     <entry file="file://$PROJECT_DIR$/app/express/public/stylesheets/nav.css">
@@ -721,13 +889,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/express/public/controller/IndexController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/express/public/controller/IndexController.js" />
     <entry file="file://$PROJECT_DIR$/app/express/views/partials/nav.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -735,27 +897,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
           <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/express/views/partials/indexImage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="51" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="11" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/express/views/partials/routesImage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/express/views/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="53" column="7" lean-forward="true" selection-start-line="51" selection-start-column="3" selection-end-line="53" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -773,27 +914,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/express/views/filterPage.html">
+    <entry file="file://$PROJECT_DIR$/app/express/views/partials/indexImage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-118">
-          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-          <folding>
-            <element signature="n#nav#0;n#section#0;n#section#1;n#body#0;n#html#0;n#!!top" />
-          </folding>
+        <state relative-caret-position="187">
+          <caret line="11" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/express/views/filterImage.html">
+    <entry file="file://$PROJECT_DIR$/app/express/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="2" column="56" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="56" />
+        <state relative-caret-position="353">
+          <caret line="46" column="16" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/express/views/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="57" column="38" lean-forward="true" selection-start-line="57" selection-start-column="38" selection-end-line="57" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/express/routes/mainRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/express/public/stylesheets/filterPage.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+        <state relative-caret-position="289">
+          <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/express/views/partials/filterImage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/express/views/partials/routesImage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/express/views/filterPage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-136">
+          <caret line="80" selection-start-line="80" selection-end-line="82" selection-end-column="35" />
+          <folding>
+            <element signature="n#nav#0;n#section#0;n#section#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>

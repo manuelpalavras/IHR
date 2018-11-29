@@ -12,6 +12,8 @@
 
 <script>
     $("#nav").load("./partials/nav.html");
+
+
 </script>
 
 
@@ -79,16 +81,30 @@
             <div class="row"></div>
             <div class="row"></div>
             <div class="row"></div>
-            <div class="row"></div>
         </div>
     </section>
 
 </section>
 
 <script>
+
+
     $("#imagens > div").each(function () {
-        $(this).load("filterImage.html");
+        $(this).load("./partials/filterImage.html")
     });
+
+    $.get('/routes', (route) => {
+        for (let i = 0; i < route.length; i++) {
+            $(".row > h4:eq(" + i + ")").html(route[i].Nome);
+            $(".row > p:eq(" + i + ")").text(route[i].Descricao);
+            $(".col-sm-2>p:eq(" + (i * 2) + ")").text(route[i].Classificacao);
+            $(".col-sm-2>p:eq(" + (i * 2 + 1) + ")").text(`${route[i].Avaliacoes} Avaliações`);
+            $(".col-sm-3>p:eq(" + (i * 2) + ")").text("Tipo : Histórica, Cultural");
+            $(".col-sm-3>p:eq(" + (i * 2 + 1) + ")").text("Dificuldade : Baixa")
+        }
+    });
+
+
 </script>
 
 <link rel="stylesheet" href="lib/bootstrap/bootstrap.css">
