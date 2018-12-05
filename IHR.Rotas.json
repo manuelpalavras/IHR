@@ -30,7 +30,7 @@
         {
             "Nome" : "Castelo de São Jorge", 
             "Descricao" : "O Topo de lisboa", 
-            "Img" : "castelodesaojorge", 
+            "Img" : "castelodesaojorge.jpg", 
             "coordenadas" : {
                 "type" : "Point", 
                 "coordinates" : [
@@ -176,4 +176,83 @@
     "Deficientes" : true, 
     "Pais" : "Portugal", 
     "Cidade" : "Lisboa"
+}
+{ 
+    "_id" : ObjectId("5c07f8d975425b32f802b0ca"), 
+    "Nome" : "Zona Ribeirinha do Porto", 
+    "Descricao" : "Muitos são os motivos para passar um dia pleno de diversão na ribeira do Porto e Gaia. Num Cruzeiro pelo Douro conhecemos as zonas ribeirinhas das duas margens, as suas histórias e património. Podemos visitar as Caves onde envelhece o tão nosso Vinho do Porto e ver no passeio do teleférico de Gaia, as cidades de uma outra perspectiva. E porque não aproveitar uma esplanada com vista para o rio, relaxar e saborear uma deliciosa Francesinha? No entanto, o dia nunca estaria completo sem uma pequena caminhada nas margens do Douro", 
+    "PoI" : [
+        {
+            "Nome" : "Cais de Gaia", 
+            "Descricao" : "Durante muitos séculos, aqui se localizou um porto fluvial de onde eram exportadas diversas mercadorias, com especial relevo para o vinho do Porto. É possivel realizar um passeio de barco pelo o rio douro ou andar no teleferico de gaia ", 
+            "Img" : "caisgaia.jpg", 
+            "coordenadas" : {
+                "type" : "Point", 
+                "coordinates" : [
+                    41.137363, 
+                    -8.615936
+                ]
+            }
+        }, 
+        {
+            "Nome" : "Tabuleiro inferior Ponte D. Luís I", 
+            "Descricao" : "A Ponte de D. Luís I ou Ponte Luiz I, é uma ponte em estrutura metálica com dois tabuleiros, construída entre os anos 1881 e 1888, ligando as cidades do Porto e Vila Nova de Gaia (margem norte e sul, respetivamente) separadas pelo rio Douro", 
+            "Img" : "pontedluis.jpg", 
+            "coordenadas" : {
+                "type" : "Point", 
+                "coordinates" : [
+                    41.138818, 
+                    -8.609483
+                ]
+            }
+        }, 
+        {
+            "Nome" : "Cais da Ribeira", 
+            "Descricao" : "A Ribeira é um dos locais mais antigos e típicos da cidade Porto, em Portugal. Localizada na freguesia de São Nicolau, junto ao Rio Douro, faz parte do Centro Histórico do Porto, Património Mundial da UNESCO. É, actualmente, uma zona muito frequentada por turistas e local de concentração de bares e restaurantes.", 
+            "Img" : "caisribeira.jpg", 
+            "coordenadas" : {
+                "type" : "Point", 
+                "coordinates" : [
+                    41.140542, 
+                    -8.611576
+                ]
+            }
+        }, 
+        {
+            "Nome" : "Sé do Porto", 
+            "Descricao" : "A Sé / Catedral da cidade do Porto, situada no coração do centro histórico da cidade do Porto, é um dos principais e mais antigos monumentos de Portugal.", 
+            "Img" : "seporto.jpg", 
+            "coordenadas" : {
+                "type" : "Point", 
+                "coordinates" : [
+                    41.142431, 
+                    -8.611764
+                ]
+            }
+        }, 
+        {
+            "Nome" : "Tabuleiro Superior Ponte D. Luís I", 
+            "Descricao" : "O tabuleiro Superior da ponte D.Luis I é um dos melhores miradouros sobre o rio douro", 
+            "Img" : "tabuleirosuperior.jpg", 
+            "coordenadas" : {
+                "type" : "Point", 
+                "coordinates" : [
+                    41.142474, 
+                    -8.610163
+                ]
+            }
+        }
+    ], 
+    "Tipo" : [
+        "Miradouro", 
+        "Historica", 
+        "Gastronomica"
+    ], 
+    "Classificacao" : "4.9", 
+    "Avaliacoes" : "650", 
+    "Dificuldade" : "Media", 
+    "Duracao" : "Full-Day", 
+    "Deficientes" : true, 
+    "Pais" : "Portugal", 
+    "Cidade" : "Porto"
 }
