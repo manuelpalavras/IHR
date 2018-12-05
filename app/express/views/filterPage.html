@@ -8,22 +8,19 @@
 </head>
 <body>
 
-<section id="nav"></section>
-
+<header>
+    <div id="nav"></div>
+</header>
 <script>
     $("#nav").load("./partials/nav.html");
-
-
 </script>
-
-
 <section class="container-fluid">
     <section class="row">
-        <nav class="col-sm-2" id="filter">
-            <h7>Tipo de rotas</h7>
-            <br>
-            <br>
+        <div class="col-sm-2" id="filter">
+            <hr>
+
             <table>
+                <h6>Tipo de rotas</h6>
                 <tr>
                     <td>Todas</td>
                     <td><input type="checkbox" name="tipo" value="all"></td>
@@ -49,10 +46,8 @@
                     <td><input type="checkbox" name="tipo" value="noite"></td>
                 </tr>
             </table>
-            <br>
-            <h7>Classificação</h7>
-            <br>
-            <br>
+            <hr>
+            <h6>Classificação</h6>
             <table>
                 <tr>
                     <td>★★★★★</td>
@@ -75,37 +70,18 @@
                     <td><input type="radio" name="tipo" value="1"></td>
                 </tr>
             </table>
+            <hr>
 
-        </nav>
+        </div>
         <div class="col-sm-10" id="imagens">
-            <div class="row"></div>
-            <div class="row"></div>
-            <div class="row"></div>
         </div>
     </section>
 
 </section>
 
-<script>
+<script src="js/global.js"></script>
+<script src="js/filterRouteRender.js"></script>
 
-
-    $("#imagens > div").each(function () {
-        $(this).load("./partials/filterImage.html")
-    });
-
-    $.get('/routes', (route) => {
-        for (let i = 0; i < route.length; i++) {
-            $(".row > h4:eq(" + i + ")").html(route[i].Nome);
-            $(".row > p:eq(" + i + ")").text(route[i].Descricao);
-            $(".col-sm-2>p:eq(" + (i * 2) + ")").text(route[i].Classificacao);
-            $(".col-sm-2>p:eq(" + (i * 2 + 1) + ")").text(`${route[i].Avaliacoes} Avaliações`);
-            $(".col-sm-3>p:eq(" + (i * 2) + ")").text("Tipo : Histórica, Cultural");
-            $(".col-sm-3>p:eq(" + (i * 2 + 1) + ")").text("Dificuldade : Baixa")
-        }
-    });
-
-
-</script>
 
 <link rel="stylesheet" href="lib/bootstrap/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="./stylesheets/filterPage.css">

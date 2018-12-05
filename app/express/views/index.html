@@ -5,62 +5,70 @@
 <head>
     <meta charset="UTF-8">
     <script src="lib/jquery/jquery-3.3.1.js"></script>
-    <script rel="script" src="./js/locationInfo.js"></script>
     <title>INTERACTIVE HISTORICAL ROUTES</title>
 </head>
-<body>
+<body onload="getLocation()">
 <header>
     <section id="head">
         <div id="nav"></div>
-        <p id="location"></p>
-        <h1>INTERACTIVE HISTORICAL ROUTES</h1>
-        <hr>
-
-
+        <div id="entrance">
+            <h1 id="title">INTERACTIVE HISTORICAL ROUTES</h1>
+            <h5 id="scrol">V</h5>
+        </div>
     </section>
 </header>
-<h2>ROTAS PERTO DE SI</h2>
-<hr>
-<section class="row" id="routes">
-    <div class="container col-sm-3"></div>
-    <div class="container col-sm-3"></div>
-    <div class="container col-sm-3"></div>
-    <div class="container col-sm-3"></div>
+
+<section class="container-fluid">
+    <div class="row">
+        <div class="row" id="routes">
+            <h1>ROTAS PERTO DE SI</h1>
+            <div class="container col-sm-3"></div>
+            <div class="container col-sm-3"></div>
+            <div class="container col-sm-3"></div>
+            <div class="container col-sm-3"></div>
+        </div>
+
+        <div class="row" id="cidades">
+            <h1>CIDADES MAIS VISITADAS</h1>
+            <div class="container col-sm-3"></div>
+            <div class="container col-sm-3"></div>
+            <div class="container col-sm-3"></div>
+            <div class="container col-sm-3"></div>
+        </div>
+
+        <div class="row" id="PoI">
+            <h1>PONTOS DE INTERESSE</h1>
+            <div class="container col-sm-3"></div>
+            <div class="container col-sm-3"></div>
+            <div class="container col-sm-3"></div>
+            <div class="container col-sm-3"></div>
+        </div>
+    </div>
 </section>
-<hr>
-<h2>CIDADES MAIS VISITADAS</h2>
-<hr>
-<section class="row" id="cidades">
-    <div class="container col-sm-3"></div>
-    <div class="container col-sm-3"></div>
-    <div class="container col-sm-3"></div>
-    <div class="container col-sm-3"></div>
-</section>
-<hr>
-<h2>PONTOS DE INTERESSE</h2>
-<hr>
-<section class="row" id="PoI">
-    <div class="container col-sm-3"></div>
-    <div class="container col-sm-3"></div>
-    <div class="container col-sm-3"></div>
-    <div class="container col-sm-3"></div>
-</section>
-<hr>
+
+<footer class="row">
+    <div class="col-sm-3" style="background-color: yellow"></div>
+    <div class="col-sm-3"></div>
+    <div class="col-sm-3" style="background-color: yellow"></div>
+    <div class="col-sm-3"></div>
+</footer>
 <script>
-    $("#search").load("./partials/searchBar.html");
     $("#nav").load("./partials/nav.html");
-    $("#routes > div").each(function () {
-        $(this).load("./partials/indexImage.html");
+
+    $.get("./partials/indexImage.html", (imagensHtml) => {
+        $("#routes > div").each(function () {
+            $(this).append(imagensHtml);
+        });
+        $("#cidades > div").each(function () {
+            $(this).append(imagensHtml);
+        });
+        $("#PoI > div").each(function () {
+            $(this).append(imagensHtml);
+        });
     });
-    $("#cidades > div").each(function () {
-        $(this).load("./partials/indexImage.html");
-    });
-    $("#PoI > div").each(function () {
-        $(this).load("./partials/indexImage.html");
-    });
-    getLocation();
 
 </script>
+<script rel="script" src="js/global.js"></script>
 
 <link rel="stylesheet" type="text/css" href="./stylesheets/index.css">
 

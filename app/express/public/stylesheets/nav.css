@@ -1,44 +1,135 @@
-a , .nav > button, .nav > a > button {
-    width: 15%;
-    height: 10vh;
-    -webkit-border-radius: 0 !important;
-    -moz-border-radius: 0 !important;
-    border-radius: 0 !important;
+.col-sm-10 , .col-sm-9 {
+    align-self: center;
 }
 
-.nav {
-    background-color: #343a40;
+nav {
+    height: 8vh;
+    max-width:  215.49520766773162vh;
+}
+
+.input-group-addon {
+    background: white !important;
+}
+
+.form-control {
+    border-right: 0;
+    box-shadow: 0 0 0;
+    border-color: #bcba97;
+}
+
+.submit {
+    height: 100%;
+    background: #333333;
+    border: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    background: #333333;
+}
+
+#logo {
+    background: #333333 url("../image/logo/big_no_background_white.png") no-repeat center;
+    background-size: 50%;
+}
+
+#logo:hover {
+    background: #00B7FF url("../image/logo/big_no_background_black.png") no-repeat center;
+}
+
+/* DROPDOWN */
+
+#dropdown {
+    padding-left: 0;
+    padding-right: 0;
+    height: 100%;
+    width: 100%;
+    align-self: center;
+}
+
+#dropdown:hover {
+    background: #00B7FF;
+}
+
+#drop-nav:hover {
+    background: #00B7FF;
+}
+
+#drop-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+ul {
+    width: 100%;
+    height: 100%;
+}
+
+
+ul li {
+    display: block;
+    position: relative;
+    float: left;
+}
+
+li ul {
+    display: none;
+}
+
+li:hover ul {
+    display: block;
+    position: absolute;
+}
+
+li:hover li {
+    float: none;
+}
+
+ul li a {
+    display: block;
+    background: #333333;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #fff;
+}
+
+ul li a:hover {
+    background: #333333;
+}
+
+li:hover a {
+    background: #333333;
+}
+
+li:hover li a:hover {
+    background: #00B7FF;
+}
+
+#drop-nav li ul li {
+    height: 100%;
+    border-top: 0;
+}
+
+li, a {
+    width: 100%;
+    height: 100%;
 }
 
 .btn-dark {
-    font-size: large;
-    border-style: none;
-}
-
-#home {
+    height: 100%;
     width: 100%;
+    background: #333333;
 }
 
-#search {
-    width: 25%;
+.fa-search {
+    color: white;
 }
 
-input[type=text] {
-    width: 100%;
-    box-sizing: border-box;
-    border: 0.5vh solid #ccc;
-    border-radius: 1vh;
-    font-size: 2vh;
-    background-color: white;
-    background-position: left center;
-    background-repeat: no-repeat;
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-UZISHRt8aFLN21vtfZ_ugUQo3QMtT2b9FcuxvbF6saxjmFwO');
-    background-size: 5%;
+#drop-nav > li > button.btn-dark {
+    font-size: xx-large;
 }
-
-input:focus {
-    background-image: none;
-}
-
-
-

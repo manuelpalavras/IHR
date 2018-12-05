@@ -1,51 +1,57 @@
 #filter{
+    width: 10%;
     background-color: #343a40;
-    width: 15vh;
-    height: 100%;
 }
 
-
-p{
-    text-align: justify;
-}
-
-.col-sm-2{
-    text-align: center;
+header > div > .row {
+    child-align: middle;
+    margin-right: 0;
+    margin-left: 0;
 }
 
 nav.col-sm-2 {
     text-align: left;
     color: white;
+    flex: 0 0 15%;
 }
 
-table, th, td {
-    padding: 5px;
+table, td {
+    width: 100%;
+    padding-bottom: 1.5vh;
 }
-table {
-    border-spacing: 15px;
-}
-section.container-fluid > section.row > div.col-sm-10 > div.row{
-    margin-top: 2vh;
-}
-section.container-fluid > section.row > div.col-sm-10 > div.row > div.col-sm-2 >p{
-    text-align: justify;
-    margin-bottom: 0px;
-}
-section.container-fluid > section.row > div.col-sm-10 > div.row > div.col-sm-3 > p{
-    text-align: justify;
-    margin-bottom: 0px;
-}
-section.container-fluid > section.row > div.col-sm-10 > div.row > div.col-sm-3 > img{
 
-    width: 97%;
-    height:80%;
-
-}
-section.container-fluid > section.row > div.col-sm-10 > div.row > div.col-sm-2{
+#imagens > div.row > div.col-sm-3 > div > figure > img {
+    height: 30vh;
     margin-top: 4vh;
+}
+#imagens > div.row > div.col-sm-4 {
+    margin-top: 4vh;
+}
+
+#imagens > div.row > div.col-sm-4 > div.row > p {
+    text-align: justify;
+}
+
+
+#imagens > div.row > div.col-sm-2 > p {
+    margin-top: 4vh;
+    text-align: justify;
     margin-bottom: 4vh;
 }
-section.container-fluid > section.row > div.col-sm-10 > div.row > div.col-sm-3{
+#imagens > div.row > div.col-sm-3 > p {
     margin-top: 4vh;
+    text-align: justify;
     margin-bottom: 4vh;
+}
+
+div.row:hover {
+    background-color: #f5ebf3;
+}
+
+section.container-fluid > section.row {
+    min-height: 95vh;
+}
+
+h4 {
+    text-align: center;
 }

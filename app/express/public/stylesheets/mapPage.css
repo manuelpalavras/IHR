@@ -1,5 +1,11 @@
-.col-sm-2 {
+.container-fluid > .row > .col-sm-2 {
     background-color: #343a40;
+}
+
+header > div > .row {
+    child-align: middle;
+    margin-right: 0;
+    margin-left: 0;
 }
 
 h4 {
@@ -7,14 +13,26 @@ h4 {
     color: white;
 }
 
-#content{
+#content {
     min-height: 90vh;
 }
 
-#content > div.row , #content > .row > map {
+#content > div.row, #content > .row > map {
     min-height: 90vh;
+    align-self: normal;
+    z-index: -1;
 }
 
-section.container.col-sm-12 > div , section.container.col-sm-12 > div > figure {
+section.container.col-sm-12 > div, section.container.col-sm-12 > div > figure {
     height: 20%;
+}
+
+nav {
+    align-self: center;
+    width: 101%;
+}
+
+#title {
+    margin-top: 5%;
+    margin-bottom: 15%;
 }
