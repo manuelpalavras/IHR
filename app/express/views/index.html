@@ -12,7 +12,6 @@
     <section id="head">
         <div id="nav"></div>
         <div id="entrance">
-            <h1 id="title">INTERACTIVE HISTORICAL ROUTES</h1>
             <h5 id="scrol">V</h5>
         </div>
     </section>
@@ -22,26 +21,14 @@
     <div class="row">
         <div class="row" id="routes">
             <h1>ROTAS PERTO DE SI</h1>
-            <div class="container col-sm-3"></div>
-            <div class="container col-sm-3"></div>
-            <div class="container col-sm-3"></div>
-            <div class="container col-sm-3"></div>
         </div>
 
         <div class="row" id="cidades">
             <h1>CIDADES MAIS VISITADAS</h1>
-            <div class="container col-sm-3"></div>
-            <div class="container col-sm-3"></div>
-            <div class="container col-sm-3"></div>
-            <div class="container col-sm-3"></div>
         </div>
 
         <div class="row" id="PoI">
             <h1>PONTOS DE INTERESSE</h1>
-            <div class="container col-sm-3"></div>
-            <div class="container col-sm-3"></div>
-            <div class="container col-sm-3"></div>
-            <div class="container col-sm-3"></div>
         </div>
     </div>
 </section>
@@ -54,21 +41,16 @@
 </footer>
 <script>
     $("#nav").load("./partials/nav.html");
-
     $.get("./partials/indexImage.html", (imagensHtml) => {
-        $("#routes > div").each(function () {
-            $(this).append(imagensHtml);
-        });
         $("#cidades > div").each(function () {
             $(this).append(imagensHtml);
         });
-        $("#PoI > div").each(function () {
-            $(this).append(imagensHtml);
-        });
+
     });
 
 </script>
 <script rel="script" src="js/global.js"></script>
+<script rel="script" src="js/indexRender.js"></script>
 
 <link rel="stylesheet" type="text/css" href="./stylesheets/index.css">
 

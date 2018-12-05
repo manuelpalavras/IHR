@@ -1,5 +1,5 @@
 
-$.get('/routes/25 de abril', (route) => {
+$.get('/routes/Conhecer belem!', (route) => {
     $("#PoI").append("<h4 id='title'></h4><section class=\"row\"><section class='container col-sm-12' id='PoI'></section></section>")
     $("#title").html(route.Nome);
 

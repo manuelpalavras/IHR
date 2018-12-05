@@ -7,7 +7,7 @@
 
 
 <nav class="row" onload="getLocation()">
-    <button class="col-sm-1 btn-dark" id="logo"></button>
+    <button class="col-sm-1 btn-dark" href="../index.html" id="logo"></button>
     <div class="col-sm-9">
         <div class="container">
             <div class="input-group stylish-input-group">
@@ -23,16 +23,23 @@
 
     <div class="col-sm-2" id="dropdown">
         <ul id="drop-nav">
-            <li><button class="btn-dark" href="#">≡</button>
+            <li>
+                <button class="btn-dark" href="#"><i class="fas fa-bars"></i></button>
                 <ul>
-                    <li><button class="btn-dark" href="#">Joomla</button></li>
-                    <li><button class="btn-dark"href="#">Drupal</button></li>
-                    <li><button class="btn-dark"href="#">WordPress</button></li>
-                    <li><button class="btn-dark" href="#">Concrete 5</button></li>
+                    <li>
+                        <button class="btn-dark" href="#">Login</button>
+                    </li>
+                    <li>
+                        <button class="btn-dark" href="#">Estatisticas</button>
+                    </li>
+                    <li>
+                        <button class="btn-dark" onclick="getLocation()">Localização Actual</button>
+                    </li>
                 </ul>
             </li>
         </ul>
     </div>
+
 
 
 </nav>

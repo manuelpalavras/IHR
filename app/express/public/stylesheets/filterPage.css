@@ -1,6 +1,7 @@
 #filter{
     width: 10%;
-    background-color: #343a40;
+    background-color: #333333;
+    color: white;
 }
 
 header > div > .row {
@@ -18,6 +19,11 @@ nav.col-sm-2 {
 table, td {
     width: 100%;
     padding-bottom: 1.5vh;
+}
+
+#imagens {
+    align-self: normal;
+    z-index: -1;
 }
 
 #imagens > div.row > div.col-sm-3 > div > figure > img {

@@ -1,6 +1,4 @@
 
-let nome = "Lisboa";
-
 function getLocation() {
     if (navigator.geolocation) {
         navigator.geolocation.watchPosition(showPosition);
@@ -13,8 +11,3 @@ function getLocation() {
 function showPosition(position) {
     $.post('/location/coordinates', position.coords , null, 'coordinates');
 }
-
-exports = {
-    nome,
-    getLocation
-};

@@ -21,23 +21,12 @@ router.get('/routes', (req,res) => {
    })
 });
 
-//
-// router.get('/', (req,res) => {
-//     let query = req.query.value;
-//     if(query === 'cityName'){
-//
-//     }
-//     if(query === 'routeName'){
-//
-//     }
-//
-//         else
-//
-//
-//     dataRoutes.getCityRoutes(req.params.cityName, (err, result) => {
-//         res.send(result);
-//     })
-// });
+
+router.get('/cities' , ((req,res) => {
+    dataRoutes.getCities((err,result) => {
+        res.send(result);
+    })
+}));
 
 
 module.exports = router;

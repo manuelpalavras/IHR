@@ -39,3 +39,13 @@ exports.getRoutes = function (cb) {
 
 };
 
+exports.getCities = function (cb) {
+    mongo((db) => {
+        db.collection('Rotas').distinct('Cidade',((err, result) => {
+            if (err)
+                cb('routes not found');
+            else
+                cb(err, result)
+        }))
+    })
+}
