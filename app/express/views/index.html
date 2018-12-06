@@ -41,13 +41,6 @@
 </footer>
 <script>
     $("#nav").load("./partials/nav.html");
-    $.get("./partials/indexImage.html", (imagensHtml) => {
-        $("#cidades > div").each(function () {
-            $(this).append(imagensHtml);
-        });
-
-    });
-
 </script>
 <script rel="script" src="js/global.js"></script>
 <script rel="script" src="js/indexRender.js"></script>

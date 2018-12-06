@@ -1,16 +1,14 @@
-
-
 $.get(`/city/${nome}`, (route) => {
-
-    $.get("./partials/filterRoutes.html", (routeHtml)=> {
+    $.get("./partials/filterRoutes.html", (routeHtml) => {
         for (let i = 0; i < route.length; i++) {
-            let row = i;
-            $("#imagens").append("<div class='row'>"+routeHtml+"</div>");
-            $(".row > h4:eq(" + row + ")").html(route[row].Nome);
-            $(".row > p:eq(" + row + ")").text(route[row].Descricao);
-            $(".col-sm-2>p:eq(" + (row * 2) + ")").text(`${route[row].Classificacao} Classificações`);
-            $(".col-sm-2>p:eq(" + (row * 2 + 1) + ")").text(`${route[row].Avaliacoes} Avaliações`);
-            $(".col-sm-3>p:eq(" + (row * 2) + ")").text(`Tipo : ${route[row].Tipo}`);
-            $(".col-sm-3>p:eq(" + (row * 2 + 1) + ")").text(`Dificuldade : ${route[row].Dificuldade}`)
-        }});
+            $("#imagens").append("<div class='row'>" + routeHtml + "</div>");
+            $(".row > h4:eq(" + i + ")").html(route[i].Nome);
+            $(".row > p:eq(" + i + ")").text(route[i].Descricao);
+            $(".col-sm-2>p:eq(" + (i * 2) + ")").text(`${route[i].Classificacao} Classificações`);
+            $(".col-sm-2>p:eq(" + (i * 2 + 1) + ")").text(`${route[i].Avaliacoes} Avaliações`);
+            $(".col-sm-3>p:eq(" + (i * 2) + ")").text(`Tipo : ${route[i].Tipo}`);
+            $(".col-sm-3>p:eq(" + (i * 2 + 1) + ")").text(`Dificuldade : ${route[i].Dificuldade}`);
+            $("#imagens > .row:eq(" + i + ") > div > div > figure > img ").attr('src', `../image/imagens/${route[i].PoI[i].Img}`);
+        }
+    })
 });

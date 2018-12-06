@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const dataRoutes = require('../models/routes');
+const path = require('path');
 
 
 router.get('/routes/:routeName', (req, res) => {
@@ -9,21 +10,22 @@ router.get('/routes/:routeName', (req, res) => {
     })
 });
 
-router.get('/city/:cityName', (req,res) => {
+router.get('/city/:cityName', (req, res) => {
     dataRoutes.getCityRoutes(req.params.cityName, (err, result) => {
         res.send(result);
     })
 });
 
-router.get('/routes', (req,res) => {
-   dataRoutes.getRoutes((err,result) => {
-       res.send(result);
-   })
+
+router.get('/routes', (req, res) => {
+    dataRoutes.getRoutes((err, result) => {
+        res.send(result);
+    })
 });
 
 
-router.get('/cities' , ((req,res) => {
-    dataRoutes.getCities((err,result) => {
+router.get('/cities', ((req, res) => {
+    dataRoutes.getCities((err, result) => {
         res.send(result);
     })
 }));

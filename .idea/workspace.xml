@@ -3,13 +3,29 @@
   <component name="ChangeListManager">
     <list default="true" id="8503975b-6b17-4c99-8aba-8f4432fdf259" name="Default Changelist" comment="mapa feito , coordenadas guardas em Json">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/express/public/stylesheets/mapPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/express/public/stylesheets/mapPage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/express/views/mapPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/express/views/mapPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/controller/IndexController.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/express/controller/IndexController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/express/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/express/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/public/js/filterRouteRender.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/express/public/js/filterRouteRender.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/public/stylesheets/filterPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/express/public/stylesheets/filterPage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/routes/informationRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/express/routes/informationRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/routes/mainRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/express/routes/mainRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/express/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/services/locationService.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/express/services/locationService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/views/filterPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/express/views/filterPage.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/express/views/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/views/lib/bootstrap/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/views/lib/bootstrap/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/views/lib/bootstrap/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/views/lib/bootstrap/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/views/partials/filterRoutes.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/express/views/partials/filterRoutes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/views/partials/indexImage.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/express/views/partials/indexImage.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -102,50 +118,77 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/express/views/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
+            <state relative-caret-position="-12">
+              <caret column="15" selection-start-column="15" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/express/views/mapPage.html">
+      <file leaf-file-name="mapPage.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/express/public/stylesheets/mapPage.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="45" column="42" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
+            <state relative-caret-position="119">
+              <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="indexRender.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/express/public/js/indexRender.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="119" lean-forward="true" selection-start-line="8" selection-start-column="119" selection-end-line="8" selection-end-column="119" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="filterRouteRender.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/express/public/js/filterRouteRender.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="77" lean-forward="true" selection-start-line="3" selection-start-column="77" selection-end-line="3" selection-end-column="77" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/express/server.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="277">
+              <caret line="70" column="21" lean-forward="true" selection-start-line="70" selection-start-column="21" selection-end-line="70" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="indexImage.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/express/views/partials/indexImage.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" selection-start-line="1" selection-end-line="4" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="filterPage.hbs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/express/views/filterPage.hbs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="87" column="14" lean-forward="true" selection-start-line="87" selection-start-column="14" selection-end-line="87" selection-end-column="14" />
               <folding>
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#0;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/express/public/js/indexRender.js">
+      <file leaf-file-name="filterRoutes.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/express/views/partials/filterRoutes.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="102" selection-start-line="15" selection-start-column="77" selection-end-line="15" selection-end-column="102" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/express/public/stylesheets/mapPage.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="17" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/express/public/js/mapPointsRender.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="52" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="52" />
+            <state relative-caret-position="85">
+              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -178,7 +221,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/express/bin/www" />
         <option value="$PROJECT_DIR$/app/express/views/map.html" />
         <option value="$PROJECT_DIR$/app/express/views/lib/leaflet/leaflet.css" />
         <option value="$PROJECT_DIR$/app/express/public/javascripts/index.js" />
@@ -196,7 +238,6 @@
         <option value="$PROJECT_DIR$/app/express/controller/MapController.js" />
         <option value="$PROJECT_DIR$/app/express/controller/FilterController.js" />
         <option value="$PROJECT_DIR$/app/express/public/controller/IndexController.js" />
-        <option value="$PROJECT_DIR$/app/express/server.js" />
         <option value="$PROJECT_DIR$/app/express/views/searchBar.html" />
         <option value="$PROJECT_DIR$/app/express/views/nav.html" />
         <option value="$PROJECT_DIR$/app/express/views/demo.html" />
@@ -209,17 +250,14 @@
         <option value="$PROJECT_DIR$/app/express/public/js/qwerty.js" />
         <option value="$PROJECT_DIR$/app/express/views/fasf.html" />
         <option value="$PROJECT_DIR$/app/express/views/partials/routesImage.html" />
-        <option value="$PROJECT_DIR$/app/express/views/partials/filterRoutes.html" />
         <option value="$PROJECT_DIR$/app/express/public/js/globalVariavles.js" />
         <option value="$PROJECT_DIR$/app/express/public/js/locationInfo.js" />
         <option value="$PROJECT_DIR$/app/express/public/js/globalVariables.js" />
         <option value="$PROJECT_DIR$/app/express/views/filterPage.html" />
-        <option value="$PROJECT_DIR$/app/express/public/js/filterRouteRender.js" />
         <option value="$PROJECT_DIR$/app/express/public/stylesheets/filterPage.css" />
         <option value="$PROJECT_DIR$/app/express/views/partials/nav.html" />
         <option value="$PROJECT_DIR$/app/express/public/js/global.js" />
         <option value="$PROJECT_DIR$/app/express/controller/IndexController.js" />
-        <option value="$PROJECT_DIR$/app/express/views/partials/indexImage.html" />
         <option value="$PROJECT_DIR$/app/express/models/routes.js" />
         <option value="$PROJECT_DIR$/app/express/public/stylesheets/nav.css" />
         <option value="$PROJECT_DIR$/app/express/routes/mainRouter.js" />
@@ -229,6 +267,11 @@
         <option value="$PROJECT_DIR$/app/express/public/js/mapPointsRender.js" />
         <option value="$PROJECT_DIR$/app/express/public/stylesheets/mapPage.css" />
         <option value="$PROJECT_DIR$/app/express/views/mapPage.html" />
+        <option value="$PROJECT_DIR$/app/express/views/partials/indexImage.html" />
+        <option value="$PROJECT_DIR$/app/express/views/filterPage.hbs" />
+        <option value="$PROJECT_DIR$/app/express/server.js" />
+        <option value="$PROJECT_DIR$/app/express/views/partials/filterRoutes.html" />
+        <option value="$PROJECT_DIR$/app/express/public/js/filterRouteRender.js" />
       </list>
     </option>
   </component>
@@ -344,13 +387,6 @@
               <item name="IHR" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="express" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IHR" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IHR" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="express" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -359,15 +395,7 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="express" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IHR" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IHR" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="express" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
+              <item name="image" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="IHR" type="b2602c69:ProjectViewProjectNode" />
@@ -383,6 +411,15 @@
               <item name="express" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IHR" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IHR" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="express" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="IHR" type="b2602c69:ProjectViewProjectNode" />
@@ -434,9 +471,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="server.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="server.js" working-dir="$PROJECT_DIR$/app/express">
-      <method v="2" />
-    </configuration>
+    <configuration name="server.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="server.js" working-dir="$PROJECT_DIR$/app/express" />
     <recent_temporary>
       <list>
         <item itemvalue="Node.js.server.js" />
@@ -498,6 +533,7 @@
       <workItem from="1543913899728" duration="13491000" />
       <workItem from="1544008389064" duration="41000" />
       <workItem from="1544092894129" duration="11760000" />
+      <workItem from="1544113021011" duration="3855000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1540905157416</created>
@@ -566,50 +602,50 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="308685000" />
+    <option name="totallyTimeSpent" value="312540000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26488096" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32750398" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32131147" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4880763" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26427525" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.3290938" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3290938" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.21920905" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection Results" weight="0.3290938" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32750398" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3290938" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32114467" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.21920905" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4880763" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.3290938" />
     </layout>
     <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3290938" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26488096" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32750398" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32131147" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4880763" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.3290938" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3290938" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32131147" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4880763" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.21920905" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32750398" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.3290938" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -637,7 +673,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="mapa feito , coordenadas guardas em Json" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/nodejs/8.11.3/core-modules/fs.js" />
     <entry file="file://$PROJECT_DIR$/app/express/package-lock.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -668,13 +703,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="2237" column="9" selection-start-line="2237" selection-start-column="9" selection-end-line="2237" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/express/views/lib/jquery/jquery-3.3.1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="1514" selection-start-line="1514" selection-end-line="1514" />
         </state>
       </provider>
     </entry>
@@ -737,13 +765,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/express/views/partials/filterRoutes.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/express/public/image/logo/big_no_background_white.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -791,13 +812,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/express/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/express/public/stylesheets/style.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -829,27 +843,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/express/public/js/filterRouteRender.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="65" lean-forward="true" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/express/views/partials/indexImage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/express/views/lib/mapquest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="9" column="12354" lean-forward="true" selection-start-line="9" selection-start-column="12354" selection-end-line="9" selection-end-column="12354" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/express/views/lib/mapquest.js" />
     <entry file="file://$PROJECT_DIR$/app/express/public/stylesheets/filterPage.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-722">
@@ -857,17 +851,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/express/views/filterPage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="77" column="14" selection-start-line="77" selection-start-column="14" selection-end-line="77" selection-end-column="14" />
-          <folding>
-            <element signature="n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/express/views/filterPage.html" />
     <entry file="file://$PROJECT_DIR$/app/express/views/partials/nav.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-365">
@@ -875,41 +859,83 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/express/views/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/express/public/js/indexRender.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="102" selection-start-line="15" selection-start-column="77" selection-end-line="15" selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/express/public/js/mapPointsRender.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="52" lean-forward="true" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/express/views/mapPage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="45" column="42" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="598">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/express/public/stylesheets/mapPage.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        <state relative-caret-position="119">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/express/public/js/mapPointsRender.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="97" lean-forward="true" selection-start-line="10" selection-start-column="97" selection-end-line="10" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/express/views/lib/jquery/jquery-3.3.1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="1532" column="21" lean-forward="true" selection-start-line="1532" selection-start-column="21" selection-end-line="1532" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/express/views/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-12">
+          <caret column="15" selection-start-column="15" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/express/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="70" column="21" lean-forward="true" selection-start-line="70" selection-start-column="21" selection-end-line="70" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/express/public/js/indexRender.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="119" lean-forward="true" selection-start-line="8" selection-start-column="119" selection-end-line="8" selection-end-column="119" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/express/views/partials/filterRoutes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/express/views/filterPage.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="87" column="14" lean-forward="true" selection-start-line="87" selection-start-column="14" selection-end-line="87" selection-end-column="14" />
+          <folding>
+            <element signature="n#div#0;n#section#0;n#section#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/express/views/partials/indexImage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="4" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/express/public/js/filterRouteRender.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="77" lean-forward="true" selection-start-line="3" selection-start-column="77" selection-end-line="3" selection-end-column="77" />
         </state>
       </provider>
     </entry>

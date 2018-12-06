@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="lib/jquery/jquery-3.3.1.js"></script>
+    <title>Escolha de Rota</title>
+
+
+</head>
+<body>
+
+<header>
+    <div id="nav"></div>
+</header>
+<script>
+    $("#nav").load("./partials/nav.html");
+</script>
+<section class="container-fluid">
+<section class="row">
+<div class="col-sm-2" id="filter">
+            <hr>
+
+            <table>
+                <h6>Tipo de rotas</h6>
+                <tr>
+                    <td>Todas</td>
+                    <td><input type="checkbox" name="tipo" value="all"></td>
+                </tr>
+                <tr>
+                    <td>Historicas</td>
+                    <td><input type="checkbox" name="tipo" value="historica"></td>
+                </tr>
+                <tr>
+                    <td>Culturais</td>
+                    <td><input type="checkbox" name="tipo" value="cultural"></td>
+                </tr>
+                <tr>
+                    <td>Desportivas</td>
+                    <td><input type="checkbox" name="tipo" value="desportiva"></td>
+                </tr>
+                <tr>
+                    <td>Gastronomicas</td>
+                    <td><input type="checkbox" name="tipo" value="gastronomica"></td>
+                </tr>
+                <tr>
+                    <td>Noite</td>
+                    <td><input type="checkbox" name="tipo" value="noite"></td>
+                </tr>
+            </table>
+            <hr>
+            <h6>Classificação</h6>
+            <table>
+                <tr>
+                    <td>★★★★★</td>
+                    <td><input type="radio" name="tipo" value="5"></td>
+                </tr>
+                <tr>
+                    <td>★★★★</td>
+                    <td><input type="radio" name="tipo" value="4"></td>
+                </tr>
+                <tr>
+                    <td>★★★</td>
+                    <td><input type="radio" name="tipo" value="3"></td>
+                </tr>
+                <tr>
+                    <td>★★</td>
+                    <td><input type="radio" name="tipo" value="2"></td>
+                </tr>
+                <tr>
+                    <td>★</td>
+                    <td><input type="radio" name="tipo" value="1"></td>
+                </tr>
+            </table>
+            <hr>
+
+        </div>
+<div class="col-sm-10" id="imagens"></div>
+</section>
+</section>
+
+<script>
+    let nome = `{{nome}}`;
+</script>
+<script src="js/global.js"></script>
+<script src="js/filterRouteRender.js"></script>
+
+<script>
+    $("figure > img").each(() => {
+        $(this).attr('src', `../image/imagens/caisgaia.jpg`,() => {
+            console.log("done");
+        });
+    })
+</script>
+
+
+<link rel="stylesheet" href="lib/bootstrap/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="./stylesheets/filterPage.css">
+
+
+</body>
+</html>

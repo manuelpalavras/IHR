@@ -52,6 +52,7 @@ table, td {
 
 div.row:hover {
     background-color: #f5ebf3;
+    z-index: 0;
 }
 
 section.container-fluid > section.row {
