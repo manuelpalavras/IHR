@@ -1,5 +1,6 @@
 .container-fluid > .row > .col-sm-2 {
     background-color: #343a40;
+    height: 100%;
 }
 
 header > div > .row {
@@ -19,6 +20,7 @@ h4 {
 
 #content > div.row, #content > .row > map {
     min-height: 90vh;
+    max-height: 100vh;
     align-self: normal;
     z-index: -1;
 }
@@ -35,4 +37,8 @@ nav {
 #title {
     margin-top: 5%;
     margin-bottom: 15%;
+}
+
+p{
+    color: tan;
 }

@@ -6,6 +6,9 @@ $.get('/routes/Conhecer belem!', (route) => {
     $.get("./partials/indexImage.html", (localsHtml) => {
         for (let i = 0; i < route.PoI.length; i++) {
             $("#PoI").append("<div>" + localsHtml +"</div>");
+            $("#PoI > div:eq(" + i + ") > figure > img").attr('src', `../image/imagens/${route.PoI[i].Img}`);
+            $("#PoI > div:eq(" + i + ") > figure > img > figcaption").attr('value', `${route.PoI[i].Nome}`);
+            $("#PoI > div:eq(" + i + ") > figure > figcaption > p").text(`${route.PoI[i].Nome}`);
         }
     })
 });
