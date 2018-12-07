@@ -8,9 +8,14 @@ h1, p {
 #entrance {
     height: 95vh;
     position: relative;
-    z-index: -1;
+
     background: #333333 url("../image/logo/big_no_background_white.png") no-repeat center;
     background-size: 55%;
+}
+
+#entrance:hover {
+    background-image: url("https://blog.amemomentos.com/wp-content/uploads/2016/04/LISBOA-START-UP-CITY.jpg");
+    background-size: 100%;
 }
 
 #scrol {
@@ -40,7 +45,6 @@ h1, p {
 
 .row > .row {
     margin-top: 5%;
-    margin-bottom: 5%;
 }
 
 .figure img {

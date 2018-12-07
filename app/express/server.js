@@ -13,7 +13,6 @@ app.set('views', './views');
 app.set('view engine', 'hbs');
 
 app.engine('hbs', cons.handlebars);
-
 app.use('/', express.static("views"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
@@ -27,20 +26,15 @@ app.use(express.static(path.join(__dirname, 'public')));
 const locationRouter = require('./routes/locationRouter');
 const informationRouter = require('./routes/informationRouter');
 const mainRouter = require('./routes/mainRouter');
+const viewController = require('./routes/ViewController');
 
 
 app.use('/location', locationRouter);
 app.use('/information', informationRouter);
 app.use('/', mainRouter);
+app.use('/', viewController);
 
-app.get('/:cityName', (req, res) => {
-    console.log(`Pesquisar pelas rotas da cidade de ${req.params.cityName.toString()}`);
 
-    res.render('filterPage.hbs', {
-        root: path.join(__dirname, 'views'),
-        nome: req.params.cityName.toString()
-    });
-});
 
 app.listen(port, () => console.log('server working'));
 

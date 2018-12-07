@@ -23,10 +23,9 @@ table, td {
 
 #imagens {
     align-self: normal;
-    z-index: -1;
 }
 
-#imagens > div.row > div.col-sm-3 > div > figure > img {
+#imagens > div.row > div.col-sm-3 > div > a > figure > img {
     height: 30vh;
     margin-top: 4vh;
 }
@@ -52,7 +51,6 @@ table, td {
 
 div.row:hover {
     background-color: #f5ebf3;
-    z-index: 0;
 }
 
 section.container-fluid > section.row {

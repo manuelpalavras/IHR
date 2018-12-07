@@ -1,11 +1,10 @@
 const express = require('express');
 const router = express.Router();
-const dataRoutes = require('../models/routes');
-const path = require('path');
+const dataRoutes = require('../models/dataBase');
 
 
-router.get('/routes/:routeName', (req, res) => {
-    dataRoutes.getRouteByName(req.params.routeName, (err, result) => {
+router.get('/route/:routeid', (req, res) => {
+    dataRoutes.getRouteByID(req.params.routeid, (err, result) => {
         res.send(result);
     })
 });

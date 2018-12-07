@@ -1,9 +1,10 @@
 const mongo = require('./dbConn');
+const ObjectID = require('mongodb').ObjectID;
 
-exports.getRouteByName = function (name, cb) {
+exports.getRouteByID = function (id, cb) {
 
     mongo((db) => {
-        db.collection('Rotas').findOne({Nome: name}, (err, res) => {
+        db.collection('Rotas').findOne({_id: new ObjectID(id)}, (err, res) => {
             if (err || res == null)
                 cb('route not found');
             else {

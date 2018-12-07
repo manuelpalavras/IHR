@@ -1,10 +1,15 @@
-.col-sm-10 , .col-sm-9 {
+.col-sm-10, .col-sm-9 {
     align-self: center;
+}
+
+#home {
+    padding-right: 0;
+    padding-left: 0;
 }
 
 nav {
     height: 8vh;
-    max-width:  215.49520766773162vh;
+    max-width: 215.49520766773162vh;
     background: #333333;
 }
 
@@ -61,6 +66,7 @@ ul {
     height: 100%;
     padding: 0;
     margin: 0;
+    z-index: 100;
 }
 
 ul li {
@@ -89,10 +95,12 @@ ul li a {
     text-decoration: none;
     white-space: nowrap;
     color: #fff;
+
 }
 
 ul li a:hover {
     background: #333333;
+
 }
 
 li:hover a {

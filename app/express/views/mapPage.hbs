@@ -27,6 +27,7 @@
 
 <script>
     $("#nav").load("./partials/nav.html");
+    let id = `{{id}}`;
 </script>
 <script src="js/mapPointsRender.js"></script>
 <script rel="script" src="./js/global.js"></script>
@@ -43,7 +44,9 @@
                 zoom: 60
             });
             map.addControl(L.mapquest.control());
-            $.get('/routes/Conhecer belem!', (rota) => {
+
+            $.get(`/route/${id}`, (rota) => {
+                console.log(rota);
                 let waypointL = [];
                 for (let i = 0; i < rota.PoI.length-1; i++) {
                     waypointL.push(rota.PoI[i].coordenadas.coordinates)
