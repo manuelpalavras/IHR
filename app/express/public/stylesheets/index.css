@@ -8,14 +8,18 @@ h1, p {
 #entrance {
     height: 95vh;
     position: relative;
-
-    background: #333333 url("../image/logo/big_no_background_white.png") no-repeat center;
-    background-size: 55%;
+    background-size: 100%;
+    background-image: url("http://br.visitportoandnorth.travel/var/porto_norte/storage/images/porto-and-the-north/visit/artigos/nightlife-in-downtown-porto/934662-1-eng-US/Nightlife-in-downtown-Porto.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-#entrance:hover {
-    background-image: url("https://blog.amemomentos.com/wp-content/uploads/2016/04/LISBOA-START-UP-CITY.jpg");
-    background-size: 100%;
+#logoEntrance {
+    height: 100%;
+    background-image: url("../image/logo/big_no_background_white.png") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
 }
 
 #scrol {
@@ -53,6 +57,9 @@ h1, p {
     height: 40vh;
 }
 
+.col-sm-3:hover {
+    background: #00B7FF;
+}
 
 footer {
     height: 20vh;
