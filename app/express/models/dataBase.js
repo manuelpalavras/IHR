@@ -1,5 +1,6 @@
 const mongo = require('./dbConn');
 const ObjectID = require('mongodb').ObjectID;
+const fs = require('fs');
 
 exports.getRouteByID = function (id, cb) {
 
@@ -66,7 +67,7 @@ exports.getTypesOfRoutesByCity = function (cidade, cb) {
     })
 };
 
-exports.getDificultyByCity = function (cidade, cb) {
+exports.getDifficultyByCity = function (cidade, cb) {
 
     mongo((db) => {
         db.collection('Rotas').distinct('Dificuldade', {Cidade: cidade}, (err, result) => {
@@ -119,3 +120,37 @@ exports.getPoI = function (cb) {
 
 
 };
+
+
+
+exports.getJSONFile = function (nome, cb) {
+    let content;
+    fs.readFile(`models/json/${nome}`,'utf-8', (err, data) => {
+        if (err)
+            cb(err);
+        else {
+            //let buf = Buffer.from(data);
+            // console.log(data);
+            content = JSON.parse(data);
+            cb(null, data);
+        }
+    });
+};
+
+
+//simula um post à base de dados quando tivermos utlizadores para obter um historico de localizações
+
+exports.postLocation = function (latitude,longitude, cb) {
+
+    const coordinates = {
+        Latitude: latitude, Longitude: longitude
+    };
+
+    let json = JSON.stringify(coordinates);
+
+    fs.writeFile('models/json/locationInfo.json', json, 'utf8', (err,res) =>{
+        if(err)
+            res.send(err);
+    });
+    cb(null,null);
+}

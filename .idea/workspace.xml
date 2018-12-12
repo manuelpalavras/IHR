@@ -2,13 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8503975b-6b17-4c99-8aba-8f4432fdf259" name="Default Changelist" comment="mapa feito , coordenadas guardas em Json">
+      <change afterPath="$PROJECT_DIR$/app/express/models/json/locationInfo.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IHR.Rotas.json" beforeDir="false" afterPath="$PROJECT_DIR$/IHR.Rotas.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/express/models/dataBase.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/express/models/dataBase.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/express/public/js/filterRouteRender.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/express/public/js/filterRouteRender.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/public/js/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/express/public/js/global.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/express/public/js/indexRender.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/express/public/js/indexRender.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/express/routes/ViewController.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/express/routes/ViewController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/public/js/locationInfo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/public/js/navSearch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/public/json/locationInfo.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/routes/informationRouter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/routes/locationRouter.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/express/routes/mainRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/express/routes/mainRouter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/express/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/services/informationService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/services/locationService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/views/filterPage.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/app/express/views/filterPage.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/views/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/app/express/views/index.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/views/lib/flexbox/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/views/lib/flexbox/CNAME" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/views/lib/flexbox/Gruntfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/views/lib/flexbox/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/views/lib/flexbox/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/views/lib/flexbox/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/views/lib/flexbox/css/flexboxgrid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/views/lib/flexbox/css/flexboxgrid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/views/lib/flexbox/css/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/views/lib/flexbox/css/index.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/views/lib/flexbox/design/flexboxgrid-template.sketch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/views/lib/flexbox/dist/flexboxgrid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/views/lib/flexbox/dist/flexboxgrid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/views/lib/flexbox/img/menu.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/views/lib/flexbox/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/views/lib/flexbox/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/views/lib/flexbox/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/views/lib/flexbox/src/css/flexboxgrid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/views/lib/flexbox/src/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/views/lib/flexbox/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/views/lib/flexbox/src/js/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/views/lib/flexbox/vendor/css/normalize.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/views/lib/flexbox/vendor/js/modernizr.flexbox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/views/mapPage.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/app/express/views/mapPage.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/express/views/partials/nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/express/views/partials/nav.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -110,33 +145,71 @@
       <file leaf-file-name="index.hbs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/express/views/index.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-369">
-              <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+            <state relative-caret-position="175">
+              <caret line="47" selection-start-line="47" selection-end-line="47" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="indexRender.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mapPointsRender.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/express/public/js/mapPointsRender.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="61" selection-start-line="8" selection-start-column="61" selection-end-line="8" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="indexRender.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/express/public/js/indexRender.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+            <state relative-caret-position="68">
+              <caret line="4" column="58" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="filterRouteRender.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/express/public/js/filterRouteRender.js">
+      <file leaf-file-name="popup.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/express/views/popup.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="47" lean-forward="true" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nav.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/express/views/partials/nav.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
-              <caret line="6" column="49" lean-forward="true" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
-              <folding>
-                <element signature="n#style#0;n#h1#0;n#!!top" expanded="true" />
-                <element signature="e#877#1975#0" />
-                <element signature="e#2017#2219#0" />
-                <element signature="e#2271#2497#0" />
-                <element signature="e#2558#2904#0" />
-              </folding>
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="filterPage.hbs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/express/views/filterPage.hbs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mapPage.hbs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/express/views/mapPage.hbs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="50" lean-forward="true" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="global.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/express/public/js/global.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -170,11 +243,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/express/services/locationService.js" />
         <option value="$PROJECT_DIR$/app/express/public/js/map.js" />
-        <option value="$PROJECT_DIR$/app/express/routes/locationRouter.js" />
         <option value="$PROJECT_DIR$/app/express/public/json/locationInfo.json" />
-        <option value="$PROJECT_DIR$/app/express/routes/informationRouter.js" />
         <option value="$PROJECT_DIR$/app/express/controller/MapController.js" />
         <option value="$PROJECT_DIR$/app/express/controller/FilterController.js" />
         <option value="$PROJECT_DIR$/app/express/public/controller/IndexController.js" />
@@ -194,33 +264,36 @@
         <option value="$PROJECT_DIR$/app/express/public/js/locationInfo.js" />
         <option value="$PROJECT_DIR$/app/express/public/js/globalVariables.js" />
         <option value="$PROJECT_DIR$/app/express/views/filterPage.html" />
-        <option value="$PROJECT_DIR$/app/express/public/js/global.js" />
         <option value="$PROJECT_DIR$/app/express/controller/IndexController.js" />
         <option value="$PROJECT_DIR$/app/express/views/index.html" />
         <option value="$PROJECT_DIR$/app/express/views/mapPage.html" />
         <option value="$PROJECT_DIR$/app/express/views/partials/indexImage.html" />
         <option value="$PROJECT_DIR$/app/express/views/partials/filterRoutes.html" />
-        <option value="$PROJECT_DIR$/app/express/server.js" />
         <option value="$PROJECT_DIR$/app/express/models/routes.js" />
-        <option value="$PROJECT_DIR$/app/express/views/mapPage.hbs" />
         <option value="$PROJECT_DIR$/app/express/models/json.js" />
-        <option value="$PROJECT_DIR$/app/express/services/informationService.js" />
         <option value="$PROJECT_DIR$/app/express/views/popup.html" />
         <option value="$PROJECT_DIR$/app/express/public/js/mapPointsRender.js" />
-        <option value="$PROJECT_DIR$/app/express/views/partials/nav.html" />
-        <option value="$PROJECT_DIR$/app/express/public/js/navSearch.js" />
-        <option value="$PROJECT_DIR$/app/express/views/index.hbs" />
         <option value="$PROJECT_DIR$/app/express/public/stylesheets/index.css" />
         <option value="$PROJECT_DIR$/app/express/public/stylesheets/mapPage.css" />
         <option value="$PROJECT_DIR$/app/express/public/stylesheets/filterPage.css" />
         <option value="$PROJECT_DIR$/app/express/public/stylesheets/nav.css" />
-        <option value="$PROJECT_DIR$/app/express/views/filterPage.hbs" />
-        <option value="$PROJECT_DIR$/app/express/routes/mainRouter.js" />
-        <option value="$PROJECT_DIR$/app/express/models/dataBase.js" />
         <option value="$PROJECT_DIR$/app/express/routes/ViewController.js" />
         <option value="$PROJECT_DIR$/IHR.Rotas.json" />
-        <option value="$PROJECT_DIR$/app/express/public/js/filterRouteRender.js" />
         <option value="$PROJECT_DIR$/app/express/public/js/indexRender.js" />
+        <option value="$PROJECT_DIR$/app/express/services/informationService.js" />
+        <option value="$PROJECT_DIR$/app/express/routes/informationRouter.js" />
+        <option value="$PROJECT_DIR$/app/express/services/locationService.js" />
+        <option value="$PROJECT_DIR$/app/express/routes/locationRouter.js" />
+        <option value="$PROJECT_DIR$/app/express/server.js" />
+        <option value="$PROJECT_DIR$/app/express/models/dataBase.js" />
+        <option value="$PROJECT_DIR$/app/express/routes/mainRouter.js" />
+        <option value="$PROJECT_DIR$/app/express/public/js/filterRouteRender.js" />
+        <option value="$PROJECT_DIR$/app/express/public/js/navSearch.js" />
+        <option value="$PROJECT_DIR$/app/express/public/js/global.js" />
+        <option value="$PROJECT_DIR$/app/express/views/index.hbs" />
+        <option value="$PROJECT_DIR$/app/express/views/partials/nav.html" />
+        <option value="$PROJECT_DIR$/app/express/views/filterPage.hbs" />
+        <option value="$PROJECT_DIR$/app/express/views/mapPage.hbs" />
       </list>
     </option>
   </component>
@@ -236,7 +309,6 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
       <path value="$PROJECT_DIR$/app/express/package.json" />
-      <path value="$PROJECT_DIR$/app/express/views/lib/flexbox/package.json" />
     </packageJsonPaths>
   </component>
   <component name="PackageJsonUpdateNotifier">
@@ -254,6 +326,28 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="IHR" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IHR" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IHR" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IHR" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IHR" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IHR" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="express" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -308,43 +402,6 @@
               <item name="express" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="partials" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="IHR" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IHR" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IHR" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IHR" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IHR" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IHR" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="express" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IHR" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IHR" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="express" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IHR" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IHR" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="express" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -457,7 +514,8 @@
       <workItem from="1544327342566" duration="14545000" />
       <workItem from="1544380553331" duration="85000" />
       <workItem from="1544519497070" duration="892000" />
-      <workItem from="1544609725730" duration="11802000" />
+      <workItem from="1544609725730" duration="11903000" />
+      <workItem from="1544645274332" duration="9140000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1540905157416</created>
@@ -526,11 +584,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="363373000" />
+    <option name="totallyTimeSpent" value="372614000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26427525" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -538,7 +595,7 @@
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50073206" side_tool="true" weight="0.32114467" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32750398" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3290938" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49926794" visible="true" weight="0.32114467" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49926794" weight="0.32114467" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.21920905" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -579,19 +636,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/app/express/public/js/filterRouteRender.js</url>
-          <line>28</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="25" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/express/public/stylesheets/searchBar.css" />
     <entry file="file://$PROJECT_DIR$/app/express/public/controller/IndexController.js" />
     <entry file="file://$PROJECT_DIR$/app/express/views/lib/bootstrap/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -628,13 +676,6 @@
     <entry file="file://$PROJECT_DIR$/app/express/public/image/logo/black_big.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/express/public/js/locationInfo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/express/public/image/logo/big_no_background_white.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -648,13 +689,6 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/express/controller/IndexController.js" />
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="3016" column="4" selection-start-line="3016" selection-start-column="4" selection-end-line="3016" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/express/views/lib/mapquest.js" />
     <entry file="file://$PROJECT_DIR$/app/express/views/filterPage.html" />
     <entry file="file://$PROJECT_DIR$/app/express/views/lib/jquery/jquery-3.3.1.js">
@@ -668,13 +702,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/express/public/js/global.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
@@ -696,73 +723,10 @@
     <entry file="file://$PROJECT_DIR$/app/express/routes/locationRouter.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/express/views/popup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/express/routes/locationRouter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/express/services/locationService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/express/services/informationService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/express/routes/informationRouter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/express/public/js/mapPointsRender.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="61" selection-start-line="8" selection-start-column="61" selection-end-line="8" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/express/views/partials/nav.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="16" column="100" selection-start-line="16" selection-start-column="99" selection-end-line="16" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/express/public/js/navSearch.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="1" selection-start-line="2" selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/express/node_modules/mongodb/lib/collection.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32">
           <caret line="1447" selection-start-line="1447" selection-end-line="1447" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/express/views/mapPage.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="22" column="45" lean-forward="true" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -801,17 +765,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/express/server.js">
+    <entry file="file://$PROJECT_DIR$/IHR.Rotas.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+        <state relative-caret-position="238">
+          <caret line="51" column="23" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/express/models/dataBase.js">
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1428">
-          <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
+        <state relative-caret-position="275">
+          <caret line="9700" column="13" selection-start-line="9700" selection-start-column="13" selection-end-line="9700" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/express/public/js/locationInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/express/services/informationService.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/express/routes/informationRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="72" lean-forward="true" selection-start-line="2" selection-start-column="72" selection-end-line="2" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/express/services/locationService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/express/routes/locationRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
@@ -822,55 +817,96 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/express/models/json/locationInfo.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/express/models/dataBase.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="69" selection-start-line="69" selection-end-line="69" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/express/routes/mainRouter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        <state relative-caret-position="181">
+          <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/express/views/filterPage.hbs">
+    <entry file="file://$PROJECT_DIR$/app/express/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IHR.Rotas.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="51" column="23" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
-          <folding>
-            <element signature="e#428#1455#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/express/views/index.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-369">
-          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+        <state relative-caret-position="68">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/express/public/js/filterRouteRender.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="49" lean-forward="true" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
+        <state relative-caret-position="1054">
+          <caret line="62" column="26" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
           <folding>
             <element signature="n#style#0;n#h1#0;n#!!top" expanded="true" />
-            <element signature="e#877#1975#0" />
-            <element signature="e#2017#2219#0" />
-            <element signature="e#2271#2497#0" />
-            <element signature="e#2558#2904#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/express/public/js/global.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/express/public/js/navSearch.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/express/views/partials/nav.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/express/views/filterPage.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/express/views/mapPage.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="50" lean-forward="true" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/express/views/index.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/express/public/js/mapPointsRender.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="61" selection-start-line="8" selection-start-column="61" selection-end-line="8" selection-end-column="61" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/express/public/js/indexRender.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        <state relative-caret-position="68">
+          <caret line="4" column="58" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/express/views/popup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="47" lean-forward="true" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
         </state>
       </provider>
     </entry>

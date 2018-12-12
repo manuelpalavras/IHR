@@ -33,8 +33,8 @@ router.get('/types/:Cidade', (req, res) => {
     })
 });
 
-router.get('/dificulty/:Cidade', (req, res) => {
-    dataRoutes.getDificultyByCity(req.params.Cidade, (err, result) => {
+router.get('/difficulty/:Cidade', (req, res) => {
+    dataRoutes.getDifficultyByCity(req.params.Cidade, (err, result) => {
         res.send(result);
     })
 });
@@ -56,6 +56,33 @@ router.get('/PoI', (req, res) => {
 
     dataRoutes.getPoI((err, result) => {
         res.send(result);
+    })
+});
+
+router.get('/getJSONFile/:file', (req, res, next) => {
+
+
+    let file = req.params.file;
+
+    dataRoutes.getJSONFile(file, (err, result) => {
+        if (err)
+            next();
+        else {
+            res.send(result);
+        }
+    });
+});
+
+router.post('/coordinates',(req, res ,next) => {
+
+    let latitude = req.body.latitude;
+    let longitude =req.body.longitude;
+
+    dataRoutes.postLocation(latitude,longitude, (err,result) => {
+        if(err)
+            next();
+        else
+            res.send(result)
     })
 });
 

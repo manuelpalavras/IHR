@@ -30,12 +30,11 @@
     let id = `{{id}}`;
 </script>
 <script src="js/mapPointsRender.js"></script>
-<script rel="script" src="./js/global.js"></script>
 <script type="text/javascript">
 
 
     function initmap() {
-        $.get('/information/getJSONFile/locationInfo.json', (coords) => {
+        $.get('/getJSONFile/locationInfo.json', (coords) => {
             let center = JSON.parse(coords);
             L.mapquest.key = 'DaaGkPe6Uv6Zs2PmYaGpXLGpGDPBr1w9'
             var map = L.mapquest.map('map', {

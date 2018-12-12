@@ -2,7 +2,6 @@ $.get(`/city/${nome}`, (route) => {
     if (route.length >= 1)
         render(nome, route);
     else $.get(`/routes/PoI/${nome}`, (routePoI) => {
-
         if (routePoI.length >= 1)
             render(routePoI[0].Cidade, routePoI);
         else {
@@ -26,6 +25,9 @@ $.get(`/city/${nome}`, (route) => {
 
 
 function render(nome, info) {
+
+    // gera as rotas a serem mostradas
+
     $.get("./partials/filterRoutes.html", (routeHtml) => {
         for (let i = 0; i < info.length; i++) {
             $("#imagens").append("<div class='row'>" + routeHtml + "</div>");
@@ -46,16 +48,25 @@ function render(nome, info) {
             $("#imagens > .row:eq(" + i + ") > div > div > a").attr('href', `/route=${info[i]._id}`);
         }
     });
+
+
+    // opções da filtragem de acordo com as rotas que estão a ser mostradas
+
+    //tipos da rota
     $.get(`/types/${nome}`, (types) => {
         for (let i = 0; i < types.length; i++) {
             $("#tipos").append(`<tr><td>${types[i]}</td><td><input type='checkbox' value="${types[i]}" name="${types[i]}"></td></tr>`);
         }
     });
-    $.get(`/dificulty/${nome}`, (dificulties) => {
+
+    //dificuldade da rota
+    $.get(`/difficulty/${nome}`, (dificulties) => {
         for (let i = 0; i < dificulties.length; i++) {
             $("#dific").append(`<tr><td>${dificulties[i]}</td><td><input type='checkbox' value="${dificulties[i]}" name="${dificulties[i]}"></td></tr>`);
         }
     });
+
+    //classificação da rota
     $.get(`/classification/${nome}`, (classifications) => {
 
         for (let i = 0; i < classifications.length; i++) {

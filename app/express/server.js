@@ -23,17 +23,12 @@ app.use(express.static(path.join(__dirname, 'public')));
  *  Routers
  */
 
-const locationRouter = require('./routes/locationRouter');
-const informationRouter = require('./routes/informationRouter');
+
 const mainRouter = require('./routes/mainRouter');
 const viewController = require('./routes/ViewController');
 
-
-app.use('/location', locationRouter);
-app.use('/information', informationRouter);
 app.use('/', mainRouter);
 app.use('/', viewController);
-
 
 
 app.listen(port, () => console.log('server working'));

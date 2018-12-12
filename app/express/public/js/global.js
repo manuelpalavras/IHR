@@ -9,5 +9,9 @@ function getLocation() {
 }
 
 function showPosition(position) {
-    $.post('/location/coordinates', position.coords , null, 'coordinates');
+    $.post('/coordinates', position.coords , null, 'coordinates');
+}
+
+function search() {
+    $("#button").attr('href', `/city=${$('#search').val()}`)
 }
