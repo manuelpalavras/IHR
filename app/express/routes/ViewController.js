@@ -27,6 +27,15 @@ router.get('/city=:cityName', (req, res) => {
     });
 });
 
+router.get('/PoI=:poiName' , (req,res) => {
+    console.log(`Pesquisar pelas rotas que têm o PoI ${req.params.poiName}`);
+
+    res.render('filterPage.hbs', {
+        root: path.join(__dirname, 'views'),
+        nome: req.params.poiName.toString()
+    });
+});
+
 router.get('/route=:routeId', (req, res) => {
 
     console.log(`Pesquisar pela rotas escolhida com o nome de ${req.params.routeId}`);
@@ -36,5 +45,7 @@ router.get('/route=:routeId', (req, res) => {
         id: req.params.routeId
     });
 });
+
+
 
 module.exports = router;

@@ -45,8 +45,10 @@ exports.getCities = function (cb) {
         db.collection('Rotas').distinct('Cidade', (err, result) => {
             if (err)
                 cb('routes not found');
-            else
+            else {
+
                 cb(err, result)
+            }
         })
     })
 };
@@ -92,15 +94,9 @@ exports.getClassificationByCity = function (cidade, cb) {
 };
 
 exports.getRoutesOfPoI = function (PoI, cb) {
-    let query = {
-        "query": {
-            "PoI.Nome": `${PoI}`
-        },
-        "key": "Nome"
-    };
 
     mongo((db) => {
-        db.collection('Rotas').find({ PoI : {Nome : `${PoI}`}} ).toArray((err, result) => {
+        db.collection('Rotas').find({PoI: {$elemMatch: {Nome: `${PoI}`}}}).toArray((err, result) => {
             if (err)
                 cb('Routes not found');
             else {
@@ -108,4 +104,18 @@ exports.getRoutesOfPoI = function (PoI, cb) {
             }
         })
     })
+};
+
+exports.getPoI = function (cb) {
+
+    mongo((db) => {
+        db.collection('Rotas').distinct("PoI.Nome", (err, res) => {
+            if (err)
+                cb('PoI not found');
+            else
+                cb(err, res)
+        })
+    })
+
+
 };

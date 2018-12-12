@@ -45,8 +45,16 @@ router.get('/classification/:Cidade', (req, res) => {
     })
 });
 
-router.get('/routes/PoI/:Name', (req,res) => {
+router.get('/routes/PoI/:Name', (req, res) => {
+
     dataRoutes.getRoutesOfPoI(req.params.Name, (err, result) => {
+        res.send(result);
+    })
+});
+
+router.get('/PoI', (req, res) => {
+
+    dataRoutes.getPoI((err, result) => {
         res.send(result);
     })
 });
