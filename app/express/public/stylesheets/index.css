@@ -57,7 +57,7 @@ h1, p {
     height: 40vh;
 }
 
-.col-sm-3:hover {
+.figure img:hover {
     background: #00B7FF;
 }
 

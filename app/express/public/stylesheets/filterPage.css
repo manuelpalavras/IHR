@@ -4,6 +4,10 @@
     color: white;
 }
 
+#filter > button {
+    height: 10%;
+}
+
 header > div > .row {
     child-align: middle;
     margin-right: 0;
@@ -22,7 +26,9 @@ table, td {
 }
 
 #imagens {
+    overflow: auto;
     align-self: normal;
+    height: 92vh;
 }
 
 #imagens > div.row > div.col-sm-3 > div > a > figure > img {
@@ -54,7 +60,7 @@ div.row:hover {
 }
 
 section.container-fluid > section.row {
-    min-height: 95vh;
+    min-height: 92vh;
 }
 
 h4 {

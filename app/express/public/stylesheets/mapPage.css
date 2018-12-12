@@ -3,12 +3,6 @@
     height: 100%;
 }
 
-header > div > .row {
-    child-align: middle;
-    margin-right: 0;
-    margin-left: 0;
-}
-
 h4 {
     text-align: center;
     color: white;
@@ -21,13 +15,11 @@ h4 {
 #content > div.row, #content > .row > div {
     min-height: 90vh;
     align-self: normal;
-
 }
 
-
-nav {
-    align-self: center;
-    width: 101%;
+#PoI {
+    overflow: auto;
+    height: 90vh;
 }
 
 #map:hover {

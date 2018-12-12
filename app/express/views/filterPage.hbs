@@ -16,66 +16,33 @@
     $("#nav").load("./partials/nav.html");
 </script>
 <section class="container-fluid">
-<section class="row">
-<div class="col-sm-2" id="filter">
+    <section class="row">
+        <div class="col-sm-2" id="filter">
             <hr>
-
-            <table>
+            <table id="tipos">
                 <h6>Tipo de rotas</h6>
                 <tr>
                     <td>Todas</td>
-                    <td><input type="checkbox" name="tipo" value="all"></td>
-                </tr>
-                <tr>
-                    <td>Historicas</td>
-                    <td><input type="checkbox" name="tipo" value="historica"></td>
-                </tr>
-                <tr>
-                    <td>Culturais</td>
-                    <td><input type="checkbox" name="tipo" value="cultural"></td>
-                </tr>
-                <tr>
-                    <td>Desportivas</td>
-                    <td><input type="checkbox" name="tipo" value="desportiva"></td>
-                </tr>
-                <tr>
-                    <td>Gastronomicas</td>
-                    <td><input type="checkbox" name="tipo" value="gastronomica"></td>
-                </tr>
-                <tr>
-                    <td>Noite</td>
-                    <td><input type="checkbox" name="tipo" value="noite"></td>
+                    <td><input type="checkbox" name="tipoAll" value="all"></td>
                 </tr>
             </table>
             <hr>
             <h6>Classificação</h6>
-            <table>
-                <tr>
-                    <td>★★★★★</td>
-                    <td><input type="radio" name="tipo" value="5"></td>
-                </tr>
-                <tr>
-                    <td>★★★★</td>
-                    <td><input type="radio" name="tipo" value="4"></td>
-                </tr>
-                <tr>
-                    <td>★★★</td>
-                    <td><input type="radio" name="tipo" value="3"></td>
-                </tr>
-                <tr>
-                    <td>★★</td>
-                    <td><input type="radio" name="tipo" value="2"></td>
-                </tr>
-                <tr>
-                    <td>★</td>
-                    <td><input type="radio" name="tipo" value="1"></td>
-                </tr>
+            <table id="classificacao">
+
             </table>
             <hr>
-
+            <h6>Dificuldade</h6>
+            <table id="dific">
+                <tr>
+                    <td>Todas</td>
+                    <td><input type="checkbox" name="dificAll" value="all"></td>
+                </tr>
+            </table>
+            <button class="btn btn-dark">Filtrar</button>
         </div>
-<div class="col-sm-10" id="imagens"></div>
-</section>
+        <div class="col-sm-10" id="imagens"></div>
+    </section>
 </section>
 
 <script>
