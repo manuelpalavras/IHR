@@ -13,7 +13,7 @@ $.get(`/city/${nome}`, (route) => {
             //erro caso nao recebermos nada da base de dados e alguem andar a brincar com o url
 
             $("#imagens").append("<h1 style='text-align: center;' id='erro'></h1><hr>");
-            $("#erro").text(`Não foi possivel encontrar as rotas, porém tem aqui rotas da cidade de Lisboa !`);
+            $("#erro").text(`Não foi possivel encontrar as rotas, porém tem aqui rotas da cidade de ${nome}!`);
             $.get("/city/Lisboa", (routeLisbon) => {
                 render("Lisboa", routeLisbon);
             })
@@ -44,7 +44,7 @@ function render(nome, info) {
             $(".col-sm-2>p:eq(" + (i * 2 + 1) + ")").text(`${info[i].Avaliacoes} Avaliações`);
             $(".col-sm-3>p:eq(" + (i * 2) + ")").text(`Tipo : ${info[i].Tipo}`);
             $(".col-sm-3>p:eq(" + (i * 2 + 1) + ")").text(`Dificuldade : ${info[i].Dificuldade}`);
-            $("#imagens > .row:eq(" + i + ") > div > div > a > figure > img ").attr('src', `../image/imagens/${info[i].PoI[i].Img}`);
+            $("#imagens > .row:eq(" + i + ") > div > div > a > figure > img ").attr('src', `../image/imagens/${info[i].imagem}`);
             $("#imagens > .row:eq(" + i + ") > div > div > a").attr('href', `/route=${info[i]._id}`);
         }
     });

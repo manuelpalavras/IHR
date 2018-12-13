@@ -20,7 +20,7 @@ exports.getRouteByID = function (id, cb) {
 exports.getCityRoutes = function (name, cb) {
 
     mongo((db) => {
-        db.collection('Rotas').find({Rota: name}).toArray((err, result) => {
+        db.collection('Rotas').find({Cidade: name}).toArray((err, result) => {
             if (err)
                 cb('routes not found');
             else
@@ -43,11 +43,10 @@ exports.getRoutes = function (cb) {
 
 exports.getCities = function (cb) {
     mongo((db) => {
-        db.collection('Rotas').distinct('Rota', (err, result) => {
+        db.collection('Cidades').find().toArray((err, result) => {
             if (err)
                 cb('routes not found');
             else {
-
                 cb(err, result)
             }
         })

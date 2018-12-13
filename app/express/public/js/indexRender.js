@@ -17,7 +17,7 @@ $.get(`/routes`, (routes) => {
 
                 $('#routes').append("<div class=\"container col-sm-3\">" + imageHtml + "</div>");
                 $("#routes > div:eq(" + i + ") > a ").attr('href', `/route=${routes[routesNumber]._id}`);
-                $("#routes > div:eq(" + i + ") > a > figure > img").attr('src', `../image/imagens/${routes[routesNumber].PoI[0].Img}`);
+                $("#routes > div:eq(" + i + ") > a > figure > img").attr('src', `../image/imagens/${routes[routesNumber].imagem}`);
                 $("#routes > div:eq(" + i + ") > a > figure > img > figcaption").attr('value', `${routes[routesNumber].Nome}`);
                 $("#routes > div:eq(" + i + ") > a > figure > figcaption > p").text(`${routes[routesNumber].Nome}`);
 
@@ -52,10 +52,10 @@ $.get(`/routes`, (routes) => {
             // coloca as cidades que existem na base de dados , de momento duas
             for (let i = 0; i < cities.length; i++) {
                 $('#cidades').append("<div class=\"container col-sm-3\">" + imageHtml + "</div>");
-                $("#cidades > div:eq(" + i + ") > a > figure > img").attr('src', `../image/imagens/${routes[i].PoI[0].Img}`);
-                $("#cidades > div:eq(" + i + ") > a > figure > img > figcaption").attr('value', `${cities[i]}`);
-                $("#cidades > div:eq(" + i + ") > a > figure > figcaption > p").text(`${cities[i]}`);
-                $("#cidades > div:eq(" + i + ") > a").attr('href', `/city=${cities[i]}`);
+                $("#cidades > div:eq(" + i + ") > a > figure > img").attr('src', `../image/imagens/${cities[i].Imagem}`);
+                $("#cidades > div:eq(" + i + ") > a > figure > img > figcaption").attr('value', `${cities[i].Nome}`);
+                $("#cidades > div:eq(" + i + ") > a > figure > figcaption > p").text(`${cities[i].Nome}`);
+                $("#cidades > div:eq(" + i + ") > a").attr('href', `/city=${cities[i].Nome}`);
             }
         })
     });

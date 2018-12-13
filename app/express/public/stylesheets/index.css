@@ -22,6 +22,10 @@ h1, p {
     background-size: 70%;
 }
 
+#logoEntrance > h1 {
+    color: white;
+}
+
 #scrol {
     color: white;
     position: absolute;
