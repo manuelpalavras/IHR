@@ -43,6 +43,7 @@
     "Tipo" : [
         "Historica"
     ], 
+    "imagem" : "castelodesaojorge.jpg", 
     "Classificacao" : "4.7", 
     "Avaliacoes" : "439", 
     "Dificuldade" : "Media", 
@@ -169,6 +170,7 @@
         "Historica", 
         "Gastronomica"
     ], 
+    "imagem" : "torrebelem.jpg", 
     "Classificacao" : "3.6", 
     "Avaliacoes" : "679", 
     "Dificuldade" : "Facil", 
@@ -180,7 +182,7 @@
 { 
     "_id" : ObjectId("5c07f8d975425b32f802b0ca"), 
     "Nome" : "Zona Ribeirinha do Porto", 
-    "Descricao" : "Muitos são os motivos para passar um dia pleno de diversão na ribeira do Porto e Gaia. Num Cruzeiro pelo Douro conhecemos as zonas ribeirinhas das duas margens, as suas histórias e património. Podemos visitar as Caves onde envelhece o tão nosso Vinho do Porto e ver no passeio do teleférico de Gaia, as cidades de uma outra perspectiva. E porque não aproveitar uma esplanada com vista para o rio, relaxar e saborear uma deliciosa Francesinha? No entanto, o dia nunca estaria completo sem uma pequena caminhada nas margens do Douro", 
+    "Descricao" : "Nesta rota podemos visitar as Caves do nosso Vinho do Porto e ver no passeio do teleférico de Gaia, as cidades de uma outra perspectiva tal como fazer um cruzeiro pelo douro. Pode tambem aproveitar uma esplanada com vista para o rio. Um dia no porto nunca estaria completo sem uma pequena caminhada nas margens do Douro.", 
     "PoI" : [
         {
             "Nome" : "Cais de Gaia", 
@@ -248,6 +250,7 @@
         "Historica", 
         "Gastronomica"
     ], 
+    "imagem" : "caisgaia.jpg", 
     "Classificacao" : "4.9", 
     "Avaliacoes" : "650", 
     "Dificuldade" : "Media", 
@@ -256,4 +259,81 @@
     "Pais" : "Portugal", 
     "Rota": "Porto"
 }
-
+{ 
+    "_id" : ObjectId("5c110d4df3da60b433a884dd"), 
+    "Nome" : "Baixa Pombalina", 
+    "Descricao" : "A baixa de Lisboa, também chamada Baixa Pombalina ou Lisboa Pombalina por ter sido edificada por ordem do Marquês de Pombal, na sequência do terramoto de 1755, cobrindo uma área de cerca de 255 hectares. Situa-se entre o Terreiro do Paço, junto ao rio Tejo, e o Rossio e a Praça da Figueira, e longitudinalmente entre o Cais do Sodré, o Chiado e o Carmo, de um lado, e a Sé e a colina do Castelo de São Jorge, do outro.", 
+    "PoI" : [
+        {
+            "Nome" : "Restauradores", 
+            "Descricao" : "A Praça dos Restauradores situa-se na Baixa de Lisboa, no extremo meridional da Avenida da Liberdade, a poucos metros da Praça de Dom Pedro IV ", 
+            "Img" : "restauradores.jpg", 
+            "coordenadas" : {
+                "type" : "Point", 
+                "coordinates" : [
+                    38.715227, 
+                    -9.141661
+                ]
+            }
+        }, 
+        {
+            "Nome" : "Rossio", 
+            "Descricao" : "A Praça de D. Pedro IV, mais conhecida por Rossio (na grafia antiga Rocio), é uma praça da Baixa de Lisboa, tem constituído um dos centros nevrálgicos da cidade.", 
+            "Img" : "rossio.jpg", 
+            "coordenadas" : {
+                "type" : "Point", 
+                "coordinates" : [
+                    38.71372, 
+                    -9.139657
+                ]
+            }
+        }, 
+        {
+            "Nome" : "Elevador de S.Justa", 
+            "Descricao" : "O Elevador de Santa Justa, também referido como Elevador do Carmo, é um sistema de transporte público, situado no centro da cidade de Lisboa, no distrito de mesmo nome, em Portugal. Liga a rua do Ouro e a rua do Carmo ao largo do Carmo e constitui-se num dos monumentos mais interessantes da Baixa de Lisboa.", 
+            "Img" : "elevadorsantajusta.jpg", 
+            "coordenadas" : {
+                "type" : "Point", 
+                "coordinates" : [
+                    38.712171, 
+                    -9.13918
+                ]
+            }
+        }, 
+        {
+            "Nome" : "Armazens do Chiado", 
+            "Descricao" : "Os Grandes Armazéns do Chiado são uma casa de comércio localizada na confluência da Rua do Carmo com a Rua Nova do Almada e a Rua Garrett.", 
+            "Img" : "armazensdochiado.jpg", 
+            "coordenadas" : {
+                "type" : "Point", 
+                "coordinates" : [
+                    38.711011, 
+                    -9.139666
+                ]
+            }
+        }, 
+        {
+            "Nome" : "Arco da Rua Augusta", 
+            "Descricao" : "O Arco do Triunfo da Rua Augusta é um arco triunfal situado na parte norte da Praça do Comércio, sobre a Rua Augusta, em Lisboa, Portugal.", 
+            "Img" : "ruaaugusta.jpg", 
+            "coordenadas" : {
+                "type" : "Point", 
+                "coordinates" : [
+                    38.708383, 
+                    -9.136789
+                ]
+            }
+        }
+    ], 
+    "Tipo" : [
+        "Turistica"
+    ], 
+    "imagem" : "ruaaugusta.jpg", 
+    "Classificacao" : "4.4", 
+    "Avaliacoes" : "800", 
+    "Dificuldade" : "Facil", 
+    "Duracao" : "3:00", 
+    "Deficientes" : true, 
+    "Pais" : "Portugal", 
+    "Cidade" : "Lisboa"
+}
