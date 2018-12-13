@@ -51,56 +51,39 @@ function render(nome, info) {
 
 
     // opções da filtragem de acordo com as rotas que estão a ser mostradas
-
+    let valuesTipo = [];
+    let valueDiff = [];
+    let valueClass = [];
     //tipos da rota
     for (let i = 0; i < info.length; i++) {
         $.get(`/types/${info[i].Nome}`, (types) => {
-            let values = [];
-            for (let i = 0; i < types.length; i++)
-                if (!values.contains(types[i]))
-                    values.push(types[i]);
-
-
-            for (let i = 0; i < types.length; i++) {
-                $("#tipos").append(`<tr><td>${types[i]}</td><td><input type='checkbox' value="${types[i]}" name="${values[i]}"></td></tr>`);
-            }
+            for (let j = 0; j < types.length; j++)
+                if (!valuesTipo.includes(types[j])) {
+                    valuesTipo.push(types[j]);
+                    $("#tipos").append(`<tr><td>${valuesTipo[valuesTipo.length - 1]}</td><td><input type='checkbox' value="${valuesTipo[valuesTipo.length - 1]}"></td></tr>`);
+                }
         });
 
         //dificuldade da rota
         $.get(`/difficulty/${info[i].Nome}`, (dificulties) => {
-            let values = [];
-            for (let i = 0; i < dificulties.length; i++)
-                if (!values.contains(dificulties[i]))
-                    values.push(dificulties[i]);
-            for (let i = 0; i < dificulties.length; i++) {
-                $("#dific").append(`<tr><td>${dificulties[i]}</td><td><input type='checkbox' value="${dificulties[i]}" name="${dificulties[i]}"></td></tr>`);
-            }
+            for (let j = 0; j < dificulties.length; j++)
+                if (!valueDiff.includes(dificulties[j])) {
+                    valueDiff.push(dificulties[j]);
+                    $("#dific").append(`<tr><td>${valueDiff[valueDiff.length - 1]}</td><td><input type='checkbox' value="${valueDiff[valueDiff.length - 1]}"></td></tr>`);
+                }
         });
 
         //classificação da rota
         $.get(`/classification/${info[i].Nome}`, (classifications) => {
-            let values = [];
-            for (let i = 0; i < classifications.length; i++)
-                if (!values.contains(classifications[i]))
-                    values.push(classifications[i]);
-            for (let i = 0; i < classifications.length; i++) {
-                let star = "";
-                for (let j = 0; j < Math.round(classifications[i]); j++) {
-                    star += "★";
+            for (let j = 0; j < classifications.length; j++)
+                if (!valueClass.includes(Math.round(classifications[j]))) {
+                    valueClass.push(Math.round(classifications[j]));
+                    let star = ["★", "★★", "★★★", "★★★★", "★★★★★"];
+                    if (Math.round(classifications[j]) < 1)
+                        $("#classificacao").append(`<tr><td>${star[Math.round(classifications[j])]}</td><td><input type='radio' value="${valueClass[valueClass.length - 1]}"></td></tr>`);
+                    else
+                        $("#classificacao").append(`<tr><td>${star[Math.round(classifications[j]) - 1]}</td><td><input type='radio' value="${valueClass[valueClass.length - 1]}"></td></tr>`);
                 }
-                $("#classificacao").append(`<tr><td>${star}</td><td><input type='radio' value="${classifications[i]}"></td></tr>`);
-            }
         })
     }
 }
-
-
-Array.prototype.contains = function (val, length) {
-    if (this.length !== length) {
-        for (let i = 0; i < this.length; i++)
-            if (this[i] === val) {
-                return false;
-            }
-    }
-    return true;
-};

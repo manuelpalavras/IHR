@@ -20,14 +20,10 @@ function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
-let input = document.getElementById("search");
-// Execute a function when the user releases a key on the keyboard
-input.addEventListener("keyup", function (event) {
-    // Cancel the default action, if needed
-    event.preventDefault();
-    // Number 13 is the "Enter" key on the keyboard
+$("#search").keyup(function (event) {
     if (event.keyCode === 13) {
-        // Trigger the button element with a click
-        document.getElementById("button").click();
+        $("#button").click();
     }
 });
+
+$("#button").click(`/city=${capitalizeFirstLetter($('#search').val().toLowerCase())}`);
