@@ -20,7 +20,7 @@ exports.getRouteByID = function (id, cb) {
 exports.getCityRoutes = function (name, cb) {
 
     mongo((db) => {
-        db.collection('Rotas').find({Cidade: name}).toArray((err, result) => {
+        db.collection('Rotas').find({Rota: name}).toArray((err, result) => {
             if (err)
                 cb('routes not found');
             else
@@ -43,7 +43,7 @@ exports.getRoutes = function (cb) {
 
 exports.getCities = function (cb) {
     mongo((db) => {
-        db.collection('Rotas').distinct('Cidade', (err, result) => {
+        db.collection('Rotas').distinct('Rota', (err, result) => {
             if (err)
                 cb('routes not found');
             else {
@@ -54,9 +54,9 @@ exports.getCities = function (cb) {
     })
 };
 
-exports.getTypesOfRoutesByCity = function (cidade, cb) {
+exports.getTypesOfRoutesByCity = function (rota, cb) {
     mongo((db) => {
-        db.collection('Rotas').distinct('Tipo', {Cidade: cidade}, (err, result) => {
+        db.collection('Rotas').distinct('Tipo', {Nome : rota}, (err, result) => {
             if (err)
                 cb('tipos not found');
             else {
@@ -67,10 +67,10 @@ exports.getTypesOfRoutesByCity = function (cidade, cb) {
     })
 };
 
-exports.getDifficultyByCity = function (cidade, cb) {
+exports.getDifficultyByCity = function (rota, cb) {
 
     mongo((db) => {
-        db.collection('Rotas').distinct('Dificuldade', {Cidade: cidade}, (err, result) => {
+        db.collection('Rotas').distinct('Dificuldade', {Nome : rota}, (err, result) => {
             if (err)
                 cb('dificuldade not found');
             else {
@@ -81,10 +81,10 @@ exports.getDifficultyByCity = function (cidade, cb) {
 };
 
 
-exports.getClassificationByCity = function (cidade, cb) {
+exports.getClassificationByCity = function (rota, cb) {
 
     mongo((db) => {
-        db.collection('Rotas').distinct('Classificacao', {Cidade: cidade}, (err, result) => {
+        db.collection('Rotas').distinct('Classificacao', {Nome : rota}, (err, result) => {
             if (err)
                 cb('Classificacao not found');
             else {

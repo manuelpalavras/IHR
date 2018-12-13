@@ -27,20 +27,20 @@ router.get('/cities', ((req, res) => {
     })
 }));
 
-router.get('/types/:Cidade', (req, res) => {
-    dataRoutes.getTypesOfRoutesByCity(req.params.Cidade, (err, result) => {
+router.get('/types/:Rota', (req, res) => {
+    dataRoutes.getTypesOfRoutesByCity(req.params.Rota, (err, result) => {
         res.send(result);
     })
 });
 
-router.get('/difficulty/:Cidade', (req, res) => {
-    dataRoutes.getDifficultyByCity(req.params.Cidade, (err, result) => {
+router.get('/difficulty/:Rota', (req, res) => {
+    dataRoutes.getDifficultyByCity(req.params.Rota, (err, result) => {
         res.send(result);
     })
 });
 
-router.get('/classification/:Cidade', (req, res) => {
-    dataRoutes.getClassificationByCity(req.params.Cidade, (err, result) => {
+router.get('/classification/:Rota', (req, res) => {
+    dataRoutes.getClassificationByCity(req.params.Rota, (err, result) => {
         res.send(result);
     })
 });

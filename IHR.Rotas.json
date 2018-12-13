@@ -49,7 +49,7 @@
     "Duracao" : "2:00", 
     "Deficientes" : false, 
     "Pais" : "Portugal", 
-    "Cidade" : "Lisboa"
+    "Rota": "Lisboa"
 }
 { 
     "_id" : ObjectId("5bf6d59f75425b32f80295a2"), 
@@ -175,7 +175,7 @@
     "Duracao" : "4:00", 
     "Deficientes" : true, 
     "Pais" : "Portugal", 
-    "Cidade" : "Lisboa"
+    "Rota": "Lisboa"
 }
 { 
     "_id" : ObjectId("5c07f8d975425b32f802b0ca"), 
@@ -254,6 +254,6 @@
     "Duracao" : "Full-Day", 
     "Deficientes" : true, 
     "Pais" : "Portugal", 
-    "Cidade" : "Porto"
+    "Rota": "Porto"
 }
 

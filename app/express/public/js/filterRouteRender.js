@@ -3,7 +3,7 @@ $.get(`/city/${nome}`, (route) => {
         render(nome, route);
     else $.get(`/routes/PoI/${nome}`, (routePoI) => {
         if (routePoI.length >= 1)
-            render(routePoI[0].Cidade, routePoI);
+            render(nome, routePoI);
         else {
 
 
@@ -53,28 +53,54 @@ function render(nome, info) {
     // opções da filtragem de acordo com as rotas que estão a ser mostradas
 
     //tipos da rota
-    $.get(`/types/${nome}`, (types) => {
-        for (let i = 0; i < types.length; i++) {
-            $("#tipos").append(`<tr><td>${types[i]}</td><td><input type='checkbox' value="${types[i]}" name="${types[i]}"></td></tr>`);
-        }
-    });
+    for (let i = 0; i < info.length; i++) {
+        $.get(`/types/${info[i].Nome}`, (types) => {
+            let values = [];
+            for (let i = 0; i < types.length; i++)
+                if (!values.contains(types[i]))
+                    values.push(types[i]);
 
-    //dificuldade da rota
-    $.get(`/difficulty/${nome}`, (dificulties) => {
-        for (let i = 0; i < dificulties.length; i++) {
-            $("#dific").append(`<tr><td>${dificulties[i]}</td><td><input type='checkbox' value="${dificulties[i]}" name="${dificulties[i]}"></td></tr>`);
-        }
-    });
 
-    //classificação da rota
-    $.get(`/classification/${nome}`, (classifications) => {
-
-        for (let i = 0; i < classifications.length; i++) {
-            let star = "";
-            for (let j = 0; j < Math.round(classifications[i]); j++) {
-                star += "★";
+            for (let i = 0; i < types.length; i++) {
+                $("#tipos").append(`<tr><td>${types[i]}</td><td><input type='checkbox' value="${types[i]}" name="${values[i]}"></td></tr>`);
             }
-            $("#classificacao").append(`<tr><td>${star}</td><td><input type='radio' value="${classifications[i]}"></td></tr>`);
-        }
-    })
+        });
+
+        //dificuldade da rota
+        $.get(`/difficulty/${info[i].Nome}`, (dificulties) => {
+            let values = [];
+            for (let i = 0; i < dificulties.length; i++)
+                if (!values.contains(dificulties[i]))
+                    values.push(dificulties[i]);
+            for (let i = 0; i < dificulties.length; i++) {
+                $("#dific").append(`<tr><td>${dificulties[i]}</td><td><input type='checkbox' value="${dificulties[i]}" name="${dificulties[i]}"></td></tr>`);
+            }
+        });
+
+        //classificação da rota
+        $.get(`/classification/${info[i].Nome}`, (classifications) => {
+            let values = [];
+            for (let i = 0; i < classifications.length; i++)
+                if (!values.contains(classifications[i]))
+                    values.push(classifications[i]);
+            for (let i = 0; i < classifications.length; i++) {
+                let star = "";
+                for (let j = 0; j < Math.round(classifications[i]); j++) {
+                    star += "★";
+                }
+                $("#classificacao").append(`<tr><td>${star}</td><td><input type='radio' value="${classifications[i]}"></td></tr>`);
+            }
+        })
+    }
 }
+
+
+Array.prototype.contains = function (val, length) {
+    if (this.length !== length) {
+        for (let i = 0; i < this.length; i++)
+            if (this[i] === val) {
+                return false;
+            }
+    }
+    return true;
+};
