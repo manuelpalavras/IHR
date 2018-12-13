@@ -1,6 +1,6 @@
 { 
     "_id" : ObjectId("5beed8f539fc861a883b74a2"), 
-    "Nome" : "Assalto ao castelo!", 
+    "Nome" : "Assalto ao Castelo!", 
     "Descricao" : "O Castelo de São Jorge ou Paço da Alcáçova ou Paço de São Jorge localiza-se na freguesia de Santa Maria Maior, na cidade e concelho de Lisboa, em Portugal. O nome actual deriva da devoção do castelo a São Jorge, santo padroeiro dos cavaleiros e das cruzadas, feita por ordem de D. João I no século XIV.", 
     "PoI" : [
         {
@@ -54,7 +54,7 @@
 }
 { 
     "_id" : ObjectId("5bf6d59f75425b32f80295a2"), 
-    "Nome" : "Conhecer belem!", 
+    "Nome" : "Conhecer Belem!", 
     "Descricao" : "Belém está ligada aos Descobrimentos, desde que D. Manuel I subiu ao trono em 1495.Hoje, Belém contém vários espaços verdejantes com museus, parques e jardins, possuindo um atraente ambiente ribeirinho com cafés e um passeio público. É uma das zonas mais turísticas de Portugal.", 
     "PoI" : [
         {
@@ -142,7 +142,7 @@
             }
         }, 
         {
-            "Nome" : "Rua dos restaurantes", 
+            "Nome" : "Rua dos Restaurantes", 
             "Descricao" : "A poucos metros dos Pastéis de Belém, depois de você cruzar a Travessa da Praça, uma pequena rua oferece bons restaurantes com comidas típicas portuguesas. Pode ser uma boa idéia você almoçar na zona e depois comer uns pastéis de Belém da casa especializada.", 
             "Img" : "ruarestaurantesbelem.jpg", 
             "coordenadas" : {
@@ -197,7 +197,7 @@
             }
         }, 
         {
-            "Nome" : "Tabuleiro inferior Ponte D. Luís I", 
+            "Nome" : "Tabuleiro Inferior Ponte D. Luís I", 
             "Descricao" : "A Ponte de D. Luís I ou Ponte Luiz I, é uma ponte em estrutura metálica com dois tabuleiros, construída entre os anos 1881 e 1888, ligando as cidades do Porto e Vila Nova de Gaia (margem norte e sul, respetivamente) separadas pelo rio Douro", 
             "Img" : "pontedluis.jpg", 
             "coordenadas" : {
