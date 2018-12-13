@@ -2,14 +2,6 @@ const express = require('express');
 const router = express.Router();
 const path = require('path');
 
-router.get('/home', (req,res) => {
-    res.render('index.hbs', {root: path.join(__dirname, 'views')})
-});
-
-router.get('/', (req,res) => {
-    res.redirect('/home');
-});
-
 router.get('/filterPage.hbs' , (req,res) => {
     res.redirect('/home');
 });
@@ -35,17 +27,5 @@ router.get('/PoI=:poiName' , (req,res) => {
         nome: req.params.poiName.toString()
     });
 });
-
-router.get('/route=:routeId', (req, res) => {
-
-    console.log(`Pesquisar pela rotas escolhida com o nome de ${req.params.routeId}`);
-
-    res.render('mapPage.hbs', {
-        root: path.join(__dirname, 'views'),
-        id: req.params.routeId
-    });
-});
-
-
 
 module.exports = router;

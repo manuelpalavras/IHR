@@ -25,10 +25,14 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 const mainRouter = require('./routes/mainRouter');
-const viewController = require('./routes/ViewController');
+const indexViewController = require('./routes/indexViewController');
+const mapViewController = require('./routes/mapViewController');
+const filterViewController = require('./routes/filterViewController');
 
 app.use('/', mainRouter);
-app.use('/', viewController);
+app.use('/', indexViewController);
+app.use('/', mapViewController);
+app.use('/', filterViewController);
 
 
 app.listen(port, () => console.log('server working'));
