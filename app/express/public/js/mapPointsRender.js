@@ -16,26 +16,40 @@ $.get(`/route/${id}`, (route) => {
 
 function initmap() {
     $.get('/getJSONFile/locationInfo.json', (coords) => {
-        let center = JSON.parse(coords);
+        $.get(`/route/${id}`, (rota) => {
+        let center
+        //Se não tiver coordenadas vai buscar o primeiro ponto da rota
+        if(coords=="{}"){
+             center=(rota.PoI[0].coordenadas.coordinates);
+        }
+        else {
+             center = coords;
+        }
         L.mapquest.key = 'DaaGkPe6Uv6Zs2PmYaGpXLGpGDPBr1w9'
         var map = L.mapquest.map('map', {
-            center: [center.Latitude, center.Longitude],
+            center: center,
             layers: L.mapquest.tileLayer('map'),
             zoom: 60
         });
         map.addControl(L.mapquest.control());
-
-        $.get(`/route/${id}`, (rota) => {
+        //Fim Geração de mapa e inicio geração de rota
             let waypointL = [];
-            for (let i = 0; i < rota.PoI.length - 1; i++) {
-                waypointL.push(rota.PoI[i].coordenadas.coordinates)
-            }
+            //verificação qual e o center
+            if (center==rota.PoI[0].coordenadas.coordinates){
+                for (let i = 1; i < rota.PoI.length - 1; i++) {
+                    waypointL.push(rota.PoI[i].coordenadas.coordinates)
+                }}
+                else{
+                     for(let i = 0; i < rota.PoI.length - 1; i++) {
+                        waypointL.push(rota.PoI[i].coordenadas.coordinates)
+                    }
+                }
             L.mapquest.directions().route({
-                start: [center.Latitude, center.Longitude],
-                end: `${rota.PoI[rota.PoI.length - 1].coordenadas.coordinates}`,
-                waypoints: waypointL,
+                    start: center,
+                    end: `${rota.PoI[rota.PoI.length - 1].coordenadas.coordinates}`,
+                    waypoints: waypointL,
 
-                options: {
+                    options: {
                     routeType: 'pedestrian'
                 }
             })

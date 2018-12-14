@@ -149,7 +149,7 @@ exports.clearJSON = function(cb) {
 exports.postLocation = function (latitude,longitude, cb) {
 
     const coordinates = {
-        Latitude: latitude, Longitude: longitude
+         latitude, longitude
     };
 
     let json = JSON.stringify(coordinates);
