@@ -87,3 +87,14 @@ function render(nome, info) {
         })
     }
 }
+function send() {
+    let tipos = []
+    let classificacao = []
+    let dificuldade = []
+    $(`#tipos > tr > td > input`).each(() => {
+        if(this.checkbox().checked()){
+            tipos.push($(this).val())
+            console.log(tipos)
+        }
+    })
+}
