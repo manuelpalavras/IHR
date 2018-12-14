@@ -40,7 +40,7 @@ button {
 }
 
 #logo:hover {
-    background: #00B7FF url("../image/logo/big_no_background_black.png") no-repeat center;
+    background: #b0f59d url("../image/logo/big_no_background_black.png") no-repeat center;
     background-size: 50%;
 }
 
@@ -53,11 +53,11 @@ button {
 }
 
 #dropdown:hover {
-    background: #00B7FF;
+    background: #b0f59d;
 }
 
 #drop-nav:hover {
-    background: #00B7FF;
+    background: #b0f59d;
 }
 
 ul {
@@ -106,8 +106,9 @@ li:hover a {
     background: #333333;
 }
 
-li:hover li a:hover {
-    background: #00B7FF;
+.btn-dark:hover {
+    color: black;
+    background: #b0f59d;
 }
 
 li, a {

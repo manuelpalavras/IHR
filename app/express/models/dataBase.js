@@ -136,7 +136,14 @@ exports.getJSONFile = function (nome, cb) {
     });
 };
 
-
+exports.clearJSON = function(cb) {
+    let json = "{}";
+    fs.writeFile('models/json/locationInfo.json', json, 'utf8', (err,res) =>{
+        if(err)
+            res.send(err);
+    });
+    cb(null,null)
+};
 //simula um post à base de dados quando tivermos utlizadores para obter um historico de localizações
 
 exports.postLocation = function (latitude,longitude, cb) {
@@ -152,4 +159,4 @@ exports.postLocation = function (latitude,longitude, cb) {
             res.send(err);
     });
     cb(null,null);
-}
+};

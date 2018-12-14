@@ -1,5 +1,7 @@
 function getLocation() {
+    $.post('/clearJSON',null,null,null);
     if (navigator.geolocation) {
+
         navigator.geolocation.watchPosition(showPosition);
     } else {
         location.innerHTML = "Geolocation is not supported by this browser.";

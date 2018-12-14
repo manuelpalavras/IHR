@@ -42,3 +42,7 @@ p {
     width: 100%;
     z-index: 0;
 }
+
+nav {
+    width: 101%;
+}

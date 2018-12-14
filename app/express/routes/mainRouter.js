@@ -86,5 +86,13 @@ router.post('/coordinates',(req, res ,next) => {
     })
 });
 
+router.post('/clearJSON', (req, res ,next) => {
+
+    dataRoutes.clearJSON((err,result) => {
+        if(err)
+            next();
+        else res.send(result);
+    })
+});
 
 module.exports = router;

@@ -7,19 +7,18 @@
     <script src="lib/jquery/jquery-3.3.1.js"></script>
     <title>INTERACTIVE HISTORICAL ROUTES</title>
 </head>
-<body>
-<header>
-    <section id="head">
-        <div id="nav"></div>
-        <div id="entrance">
-            <div id="logoEntrance">
-                <h1> Procure as rotas turísticas da sua cidade favorita ! </h1>
+<body onload="getLocation()">
 
-            </div>
-            <h5 id="scrol">V</h5>
+<section id="head">
+    <div class="sticky" id="nav"></div>
+    <div id="entrance">
+        <div id="logoEntrance">
+
         </div>
-    </section>
-</header>
+        <h5 id="scrol">V</h5>
+    </div>
+</section>
+
 
 <section class="container-fluid">
     <div class="row">
@@ -50,6 +49,7 @@
 </script>
 
 <script rel="script" src="js/indexRender.js"></script>
+<script rel="script" src="js/global.js"></script>
 
 <link rel="stylesheet" type="text/css" href="./stylesheets/index.css">
 

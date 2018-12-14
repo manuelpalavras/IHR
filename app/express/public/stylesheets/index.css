@@ -6,6 +6,7 @@ h1, p {
 }
 
 #entrance {
+    margin-top: 8vh;
     height: 95vh;
     position: relative;
     background-size: 100%;
@@ -16,7 +17,7 @@ h1, p {
 
 #logoEntrance {
     height: 100%;
-    background-image: url("../image/logo/big_no_background_white.png") ;
+    background-image: url("../image/logo/big_no_background_white.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 70%;
@@ -51,21 +52,33 @@ h1, p {
     width: 100%;
 }
 
-.row > .row {
-    margin-top: 5%;
-}
-
 .figure img {
-    margin-top: 8%;
     vertical-align: middle;
     height: 40vh;
 }
 
-.figure img:hover {
-    background: #00B7FF;
+
+a:hover {
+    background: #b0f59d;
 }
 
 footer {
     height: 20vh;
     background-color: #333333;
+}
+
+h1 {
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+body {
+    background-color: #e0e2e2;
 }
