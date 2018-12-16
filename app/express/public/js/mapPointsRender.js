@@ -17,13 +17,14 @@ $.get(`/route/${id}`, (route) => {
 function initmap() {
     $.get('/getJSONFile/locationInfo.json', (coords) => {
         $.get(`/route/${id}`, (rota) => {
+        let point=JSON.parse(coords)
         let center
         //Se não tiver coordenadas vai buscar o primeiro ponto da rota
         if(coords=="{}"){
              center=(rota.PoI[0].coordenadas.coordinates);
         }
         else {
-             center = coords;
+             center = point.ponto;
         }
         L.mapquest.key = 'DaaGkPe6Uv6Zs2PmYaGpXLGpGDPBr1w9'
         var map = L.mapquest.map('map', {
