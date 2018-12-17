@@ -1,9 +1,13 @@
 $.get(`/city/${nome}`, (route) => {
-    if (route.length >= 1)
-        render(nome, route);
+    if (route.length >= 1) {
+        renderLeft(route);
+        renderRight(route);
+    }
     else $.get(`/routes/PoI/${nome}`, (routePoI) => {
-        if (routePoI.length >= 1)
-            render(nome, routePoI);
+        if (routePoI.length >= 1) {
+            renderLeft(route);
+            renderRight(route);
+        }
         else {
 
 
@@ -15,18 +19,18 @@ $.get(`/city/${nome}`, (route) => {
             $("#imagens").append("<h1 style='text-align: center;' id='erro'></h1><hr>");
             $("#erro").text(`Não foi possivel encontrar as rotas, porém tem aqui rotas da cidade de ${nome}!`);
             $.get("/city/Lisboa", (routeLisbon) => {
-                render("Lisboa", routeLisbon);
+                render(routeLisbon);
             })
         }
 
     })
 })
-;
 
 
-function render(nome, info) {
+function renderRight(info) {
 
     // gera as rotas a serem mostradas
+
 
     $.get("./partials/filterRoutes.html", (routeHtml) => {
         for (let i = 0; i < info.length; i++) {
@@ -48,8 +52,9 @@ function render(nome, info) {
             $("#imagens > .row:eq(" + i + ") > div > div > a").attr('href', `/route=${info[i]._id}`);
         }
     });
+}
 
-
+function renderLeft(info) {
     // opções da filtragem de acordo com as rotas que estão a ser mostradas
     let valuesTipo = [];
     let valueDiff = [];
@@ -87,14 +92,33 @@ function render(nome, info) {
         })
     }
 }
+
 function send() {
+    $('#imagens').empty();
     let tipos = []
     let classificacao = []
     let dificuldade = []
-    $(`#tipos > tr > td > input`).each(() => {
-        if(this.checkbox().checked()){
-            tipos.push($(this).val())
-            console.log(tipos)
+    for (let i = 0; i < $(`#tipos tr`).length; i++) {
+        if ($(`#tipos input:eq(${i})`).is(':checked')) {
+            tipos.push($(`#tipos input:eq(${i})`).val());
+            //console.log($(`#tipos input:eq(${i})`).val());
         }
-    })
+    }
+
+    for (let i = 0; i < $(`#classificacao tr`).length; i++) {
+        if ($(`#classificacao input:eq(${i})`).is(':checked')) {
+            classificacao.push($(`#classificacao input:eq(${i})`).val());
+            // console.log($(`#classificação input:eq(${i})`).val());
+        }
+    }
+    for (let i = 0; i < $(`#dific tr`).length; i++) {
+        if ($(`#dific input:eq(${i})`).is(':checked')) {
+            dificuldade.push($(`#dific input:eq(${i})`).val());
+            // console.log($(`#dific input:eq(${i})`).val());
+        }
+    }
+    console.log(tipos, classificacao, dificuldade);
+
+
+
 }
