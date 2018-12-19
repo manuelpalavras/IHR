@@ -28,7 +28,7 @@ $.get(`/city/${nome}`, (route) => {
 
 
 function renderRight(info) {
-
+    $('#imagens').empty();
     // gera as rotas a serem mostradas
 
 
@@ -94,7 +94,6 @@ function renderLeft(info) {
 }
 
 function send() {
-    $('#imagens').empty();
     let tipos = []
     let classificacao = []
     let dificuldade = []
@@ -117,8 +116,17 @@ function send() {
             // console.log($(`#dific input:eq(${i})`).val());
         }
     }
-    console.log(tipos, classificacao, dificuldade);
 
+    if(tipos.length === 0)
+        tipos = null;
+    if(classificacao.length === 0)
+        classificacao = null;
+    if(dificuldade.length === 0)
+        dificuldade = null;
+
+    $.get(`/filter/${tipos}/${classificacao}/${dificuldade}`, (info) => {
+        console.log(info);
+    })
 
 
 }
