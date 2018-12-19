@@ -160,3 +160,54 @@ exports.postLocation = function (latitude,longitude, cb) {
     });
     cb(null,null);
 };
+
+exports.getFilteredRoutes = function (nome,tipos,classificacao,dificuldade, cb) {
+
+
+
+    mongo((db) => {
+    let queryTipos = ""
+    let queryClassificacao = ""
+    let queryDificuldade = ""
+        for (let i = 0; i <tipos.length ; i++) {
+        if (tipos[i] !== "null") {
+            if(i==tipos.length-1) {
+                queryTipos = queryTipos + `{"Tipo" : /.*${tipos[i]}.*/i}`
+            }
+            else{
+                queryTipos = queryTipos + `{"Tipo" : /.*${tipos[i]}.*/i},`
+            }
+        }
+        }
+        for (let i = 0; i <classificacao.length ; i++) {
+            if (classificacao[i] != "null") {
+                if(i==classificacao.length-1) {
+                    queryClassificacao = queryClassificacao + `{ "Classificacao": { $gte: ${classificacao[i]-0.5}, $lte: ${classificacao[i]+0.4} } }`
+                }
+                else{
+                    queryClassificacao= queryClassificacao + `{ "Classificacao": { $gte: ${classificacao[i]-0.5}, $lte: ${classificacao[i]+0.4} } },`
+                }
+            }
+        }
+        for (let i = 0; i <dificuldade.length ; i++) {
+            if (dificuldade[i] != "null") {
+                if(i==dificuldade.length-1) {
+                    queryDificuldade = queryDificuldade + `{ { "Dificuldade": "${dificuldade[i]}" } }`
+                }
+                else{
+                    queryDificuldade = queryDificuldade + `{"Dificuldade": "${dificuldade[i]}"},`
+                }
+            }
+        }
+       let queryS=`{"$and" : [{ "Cidade": "${nome}"},{"$or":[${queryTipos}]},{"$or":[${queryClassificacao}]},{"$or":[${queryDificuldade}]}]}`
+        db.collection("Rotas").find(queryS).toArray((err, res) => {
+            if (err || res == null){
+                cb('route not found');}
+            else {
+                cb(err, res)
+
+            }
+
+
+        })})
+}

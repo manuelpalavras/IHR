@@ -24,7 +24,7 @@ $.get(`/city/${nome}`, (route) => {
         }
 
     })
-})
+});
 
 
 function renderRight(info) {
@@ -93,7 +93,7 @@ function renderLeft(info) {
     }
 }
 
-function send() {
+function send(nome) {
     let tipos = []
     let classificacao = []
     let dificuldade = []
@@ -124,7 +124,7 @@ function send() {
     if(dificuldade.length === 0)
         dificuldade = null;
 
-    $.get(`/filter/${tipos}/${classificacao}/${dificuldade}`, (info) => {
+    $.get(`/filter/${nome}/${tipos}/${classificacao}/${dificuldade}`, (info) => {
         console.log(info);
     })
 

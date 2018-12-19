@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const path = require('path');
+const dataRoutes = require('../models/dataBase');
 
 router.get('/filterPage.hbs', (req, res) => {
     res.redirect('/home');
@@ -28,12 +29,23 @@ router.get('/PoI=:poiName', (req, res) => {
     });
 });
 
-router.get('/filter/:array1/:array2/:array3', (req, res) => {
-    console.log(req.params.array1);
-    console.log(req.params.array2);
-    console.log(req.params.array3);
+router.get('/filter/:nome/:array1/:array2/:array3', (req, res) => {
+
+    let nome = req.params.nome;
+    let tipos = [].Arrayify(req.params.array1);
+    let classificacao = [].Arrayify(req.params.array2);
+    let dificuldade = [].Arrayify(req.params.array3);
+
+    dataRoutes.getFilteredRoutes(nome,tipos,classificacao,dificuldade,(err,result) =>{
+        console.log(result)
+    })
 
     res.send('ok');
 });
+
+Array.prototype.Arrayify = function(str) {
+    let array = str.split(",");
+    return array;
+};
 
 module.exports = router;
