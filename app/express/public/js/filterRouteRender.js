@@ -5,8 +5,8 @@ $.get(`/city/${nome}`, (route) => {
     }
     else $.get(`/routes/PoI/${nome}`, (routePoI) => {
         if (routePoI.length >= 1) {
-            renderLeft(route);
-            renderRight(route);
+            renderLeft(routePoI);
+            renderRight(routePoI);
         }
         else {
 
