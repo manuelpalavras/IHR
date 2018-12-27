@@ -4,10 +4,6 @@
     <list default="true" id="8503975b-6b17-4c99-8aba-8f4432fdf259" name="Default Changelist" comment="mapa feito , coordenadas guardas em Json">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/express/models/dataBase.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/express/models/dataBase.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/express/public/js/filterRouteRender.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/express/public/js/filterRouteRender.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/express/routes/filterViewController.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/express/routes/filterViewController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/baseDados/P6_Permanent_Unlimited.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/baseDados/Rotas.json" beforeDir="false" afterPath="$PROJECT_DIR$/baseDados/Rotas.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -60,17 +56,17 @@
     <session id="-1813550123">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="15" />
+          <entry key="project.closed" value="20" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.11" value="4" />
-          <entry key="project.open.time.12" value="3" />
+          <entry key="project.open.time.12" value="4" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.23" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.open.time.9" value="6" />
-          <entry key="project.opened" value="19" />
+          <entry key="project.open.time.9" value="9" />
+          <entry key="project.opened" value="24" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -96,7 +92,7 @@
           <entry key="css" value="539" />
           <entry key="hbs" value="4" />
           <entry key="html" value="2267" />
-          <entry key="js" value="2664" />
+          <entry key="js" value="2834" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -104,7 +100,7 @@
           <entry key="CSS" value="543" />
           <entry key="HTML" value="2263" />
           <entry key="Handlebars/Mustache" value="4" />
-          <entry key="JavaScript" value="2664" />
+          <entry key="JavaScript" value="2834" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts" />
@@ -116,11 +112,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/express/public/js/filterRouteRender.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="901">
+            <state relative-caret-position="1513">
               <caret line="89" column="133" selection-start-line="89" selection-start-column="133" selection-end-line="89" selection-end-column="133" />
-              <folding>
-                <element signature="n#style#0;n#h1#0;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -128,7 +121,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/express/views/filterPage.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
+            <state relative-caret-position="680">
               <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
             </state>
           </provider>
@@ -137,7 +130,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/express/views/index.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-466">
+            <state relative-caret-position="221">
               <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
             </state>
           </provider>
@@ -155,20 +148,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/express/models/dataBase.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-509">
-              <caret line="175" column="28" lean-forward="true" selection-start-line="175" selection-start-column="28" selection-end-line="175" selection-end-column="28" />
+            <state relative-caret-position="154">
+              <caret line="168" column="98" lean-forward="true" selection-start-line="168" selection-start-column="98" selection-end-line="168" selection-end-column="98" />
               <folding>
                 <element signature="e#457#688#0" />
                 <element signature="e#725#942#0" />
                 <element signature="e#979#1213#0" />
-                <element signature="e#1269#1518#0" />
-                <element signature="e#1571#1833#0" />
-                <element signature="e#1891#2157#0" />
-                <element signature="e#2204#2474#0" />
-                <element signature="e#2508#2724#0" />
-                <element signature="e#2771#3071#0" />
-                <element signature="e#3107#3278#0" />
-                <element signature="e#3439#3706#0" />
               </folding>
             </state>
           </provider>
@@ -271,7 +256,7 @@
       <path value="$PROJECT_DIR$/app/express/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="676" />
     <option name="width" value="697" />
     <option name="height" value="735" />
@@ -525,6 +510,11 @@
       <workItem from="1545709356947" duration="237000" />
       <workItem from="1545910246637" duration="3000" />
       <workItem from="1545912050778" duration="9012000" />
+      <workItem from="1545924649466" duration="64000" />
+      <workItem from="1545924816836" duration="475000" />
+      <workItem from="1545925636601" duration="529000" />
+      <workItem from="1545926187635" duration="13000" />
+      <workItem from="1545926302400" duration="2316000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1540905157416</created>
@@ -593,10 +583,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="431152000" />
+    <option name="totallyTimeSpent" value="434549000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2641369" />
@@ -882,6 +872,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/express/public/js/filterRouteRender.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1513">
+          <caret line="89" column="133" selection-start-line="89" selection-start-column="133" selection-end-line="89" selection-end-column="133" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/express/views/filterPage.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/express/views/index.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/express/routes/filterViewController.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
@@ -889,46 +900,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/express/views/index.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-466">
-          <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/express/views/filterPage.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/express/public/js/filterRouteRender.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="89" column="133" selection-start-line="89" selection-start-column="133" selection-end-line="89" selection-end-column="133" />
-          <folding>
-            <element signature="n#style#0;n#h1#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/express/models/dataBase.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-509">
-          <caret line="175" column="28" lean-forward="true" selection-start-line="175" selection-start-column="28" selection-end-line="175" selection-end-column="28" />
+        <state relative-caret-position="154">
+          <caret line="168" column="98" lean-forward="true" selection-start-line="168" selection-start-column="98" selection-end-line="168" selection-end-column="98" />
           <folding>
             <element signature="e#457#688#0" />
             <element signature="e#725#942#0" />
             <element signature="e#979#1213#0" />
-            <element signature="e#1269#1518#0" />
-            <element signature="e#1571#1833#0" />
-            <element signature="e#1891#2157#0" />
-            <element signature="e#2204#2474#0" />
-            <element signature="e#2508#2724#0" />
-            <element signature="e#2771#3071#0" />
-            <element signature="e#3107#3278#0" />
-            <element signature="e#3439#3706#0" />
           </folding>
         </state>
       </provider>
