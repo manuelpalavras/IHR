@@ -44,7 +44,7 @@
         "Historica"
     ], 
     "imagem" : "castelodesaojorge.jpg", 
-    "Classificacao" : "4.7", 
+    "Classificacao" : 4.7, 
     "Avaliacoes" : "439", 
     "Dificuldade" : "Media", 
     "Duracao" : "2:00", 
@@ -171,7 +171,7 @@
         "Gastronomica"
     ], 
     "imagem" : "torrebelem.jpg", 
-    "Classificacao" : "3.6", 
+    "Classificacao" : 3.6, 
     "Avaliacoes" : "679", 
     "Dificuldade" : "Facil", 
     "Duracao" : "4:00", 
@@ -251,7 +251,7 @@
         "Gastronomica"
     ], 
     "imagem" : "caisgaia.jpg", 
-    "Classificacao" : "4.9", 
+    "Classificacao" : 4.9, 
     "Avaliacoes" : "650", 
     "Dificuldade" : "Media", 
     "Duracao" : "Full-Day", 
@@ -329,7 +329,7 @@
         "Turistica"
     ], 
     "imagem" : "ruaaugusta.jpg", 
-    "Classificacao" : "4.4", 
+    "Classificacao" : 4.4, 
     "Avaliacoes" : "800", 
     "Dificuldade" : "Facil", 
     "Duracao" : "3:00", 

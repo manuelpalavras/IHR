@@ -85,9 +85,9 @@ function renderLeft(info) {
                     valueClass.push(Math.round(classifications[j]));
                     let star = ["★", "★★", "★★★", "★★★★", "★★★★★"];
                     if (Math.round(classifications[j]) < 1)
-                        $("#classificacao").append(`<tr><td>${star[Math.round(classifications[j])]}</td><td><input type='radio' value="${valueClass[valueClass.length - 1]}"></td></tr>`);
+                        $("#classificacao").append(`<tr><td>${star[Math.round(classifications[j])]}</td><td><input type='checkbox' value="${valueClass[valueClass.length - 1]}"></td></tr>`);
                     else
-                        $("#classificacao").append(`<tr><td>${star[Math.round(classifications[j]) - 1]}</td><td><input type='radio' value="${valueClass[valueClass.length - 1]}"></td></tr>`);
+                        $("#classificacao").append(`<tr><td>${star[Math.round(classifications[j]) - 1]}</td><td><input type='checkbox' value="${valueClass[valueClass.length - 1]}"></td></tr>`);
                 }
         })
     }
@@ -124,9 +124,14 @@ function send(nome) {
     if(dificuldade.length === 0)
         dificuldade = null;
 
+
+
     $.get(`/filter/${nome}/${tipos}/${classificacao}/${dificuldade}`, (info) => {
-        console.log(info);
+        renderRight(info);
+
     })
+
+
 
 
 }

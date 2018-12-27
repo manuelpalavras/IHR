@@ -37,10 +37,10 @@ router.get('/filter/:nome/:array1/:array2/:array3', (req, res) => {
     let dificuldade = [].Arrayify(req.params.array3);
 
     dataRoutes.getFilteredRoutes(nome,tipos,classificacao,dificuldade,(err,result) =>{
-        console.log(result)
+        res.send(result);
     })
 
-    res.send('ok');
+
 });
 
 Array.prototype.Arrayify = function(str) {
