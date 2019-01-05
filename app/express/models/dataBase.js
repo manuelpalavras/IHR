@@ -161,63 +161,63 @@ exports.postLocation = function (latitude, longitude, cb) {
 };
 
 exports.getFilteredRoutes = function (nome, tipos, classificacao, dificuldade, cb) {
-    let queryClassificacao=[];
+    let queryOr=[];
+    queryOr[0]={ Cidade: nome }
+    queryOr[1]={PoI: {$elemMatch: {Nome: nome}}}
 
     for (let i = 0; i < classificacao.length; i++) {
-        queryClassificacao.push( {Classificacao:{$gte:classificacao[i] - 0.5, $lte: classificacao[i] - (-0.4)}})
+        queryOr.push( {Classificacao:{$gte:classificacao[i+2] - 0.5, $lte: classificacao[i+2] - (-0.4)}})
     }
 
 
 
     mongo((db) => {
+       // let queryNome =[ { Cidade: nome },  {PoI: {$elemMatch: {Nome: nome}}} ] ;
         let queryS
         if (tipos[0] === "null" && classificacao[0] === "null" && dificuldade[0] === "null") {
             queryS = {
-                Cidade: nome
+                $or:[ { Cidade: nome },  {PoI: {$elemMatch: {Nome: nome}}} ]
             };
         }
         else if (tipos[0] === "null" && classificacao[0] === "null") {
             queryS = {
-                Cidade: nome,
+                $or:[ { Cidade: nome },  {PoI: {$elemMatch: {Nome: nome}}} ],
                 Dificuldade: {$in: dificuldade}
             };
         }
         else if (classificacao[0] === "null" && dificuldade[0] === "null") {
             queryS = {
-                Cidade: nome,
+                $or:[ { Cidade: nome },  {PoI: {$elemMatch: {Nome: nome}}} ],
                 Tipo: {$in: tipos}
             };
         }
         else if (tipos[0] === "null" && dificuldade[0] === "null") {
             queryS = {
-                Cidade: nome,
-                $or:queryClassificacao
+                $or:queryOr
             };
 
         }
         else if (tipos[0] === "null") {
             queryS = {
-                Cidade: nome,
                 Dificuldade: {$in: dificuldade},
-                $or:queryClassificacao
+                $or:queryOr
             };
         }
         else if (dificuldade[0] === "null") {
             queryS = {
-                Cidade: nome,
                 Tipo: {$in: tipos},
-                $or:queryClassificacao
+                $or:queryOr
             };
         }
         else if (classificacao[0] === "null") {
             queryS = {
-                Cidade: nome,
+                $or:[ { Cidade: nome },  {PoI: {$elemMatch: {Nome: nome}}} ],
                 Tipo: {$in: tipos},
                 Dificuldade: {$in: dificuldade}
             };
         }
 
-
+        console.log(queryS)
         db.collection("Rotas").find(queryS).toArray((err, res) => {
             if (err || res == null) {
                 cb('route not found');
