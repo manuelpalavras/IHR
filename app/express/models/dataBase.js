@@ -216,6 +216,14 @@ exports.getFilteredRoutes = function (nome, tipos, classificacao, dificuldade, c
                 Dificuldade: {$in: dificuldade}
             };
         }
+        else{
+            queryS = {
+                Tipo: {$in: tipos},
+                Dificuldade: {$in: dificuldade},
+                $or:queryOr
+            };
+        }
+        
 
         console.log(queryS)
         db.collection("Rotas").find(queryS).toArray((err, res) => {
