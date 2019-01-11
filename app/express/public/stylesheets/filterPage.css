@@ -4,6 +4,14 @@
     color: white;
 }
 
+#filterButton {
+    background-color: #71dd8a;
+}
+
+#filterButton:hover {
+    font-size: larger;
+}
+
 #filter > button {
     height: 10%;
 }

@@ -60,6 +60,7 @@ h1, p {
 
 a:hover {
     background: #b0f59d;
+    font-size: larger;
 }
 
 footer {

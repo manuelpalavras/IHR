@@ -8,7 +8,7 @@ $.get(`/route/${id}`, (route) => {
             $("#PoI").append("<div>" + localsHtml + "</div>");
             $("#PoI > div:eq(" + i + ") > a > figure > img").attr('src', `../image/imagens/${route.PoI[i].Img}`);
             $("#PoI > div:eq(" + i + ") > a > figure > img > figcaption").attr('value', `${route.PoI[i].Nome}`);
-            $("#PoI > div:eq(" + i + ") > a > figure > figcaption > p").text(`${route.PoI[i].Nome}`);
+            $("#PoI > div:eq(" + i + ") > a > figure > figcaption > p").text(`${i+1}. ${route.PoI[i].Nome}`);
         }
     })
 });

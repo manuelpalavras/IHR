@@ -17,9 +17,10 @@ $.get(`/city/${nome}`, (route) => {
             //erro caso nao recebermos nada da base de dados e alguem andar a brincar com o url
 
             $("#imagens").append("<h1 style='text-align: center;' id='erro'></h1><hr>");
-            $("#erro").text(`Não foi possivel encontrar as rotas, porém tem aqui rotas da cidade de ${nome}!`);
+            $("#erro").text(`Não foi possivel encontrar as rotas de ${nome}, porém tem aqui rotas da cidade de Lisboa!`);
             $.get("/city/Lisboa", (routeLisbon) => {
-                render(routeLisbon);
+                renderLeft(routeLisbon);
+                renderRight(routeLisbon);
             })
         }
 
@@ -28,6 +29,7 @@ $.get(`/city/${nome}`, (route) => {
 
 
 function renderRight(info) {
+    if(!$("#erro").get())
     $('#imagens').empty();
     // gera as rotas a serem mostradas
 

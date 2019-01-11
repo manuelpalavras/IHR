@@ -54,6 +54,7 @@ button {
 
 #dropdown:hover {
     background: #b0f59d;
+    font-size: larger;
 }
 
 #drop-nav:hover {
@@ -109,6 +110,7 @@ li:hover a {
 .btn-dark:hover {
     color: black;
     background: #b0f59d;
+    font-size: larger;
 }
 
 li, a {
