@@ -1,3 +1,5 @@
+'use strict';
+
 const express = require('express');
 const router = express.Router();
 const path = require('path');
@@ -5,7 +7,7 @@ const path = require('path');
 
 router.get('/route=:routeId', (req, res) => {
 
-    console.log(`Pesquisar pela rotas escolhida com o nome de ${req.params.routeId}`);
+    console.log(`Pesquisar pela rotas escolhida com o id de ${req.params.routeId}`);
 
     res.render('mapPage.hbs', {
         root: path.join(__dirname, 'views'),

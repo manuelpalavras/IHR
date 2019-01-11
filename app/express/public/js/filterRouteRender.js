@@ -1,3 +1,5 @@
+'use strict';
+
 $.get(`/city/${nome}`, (route) => {
     if (route.length >= 1) {
         renderLeft(route);

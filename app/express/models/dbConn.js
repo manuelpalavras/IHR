@@ -1,3 +1,5 @@
+'use strict';
+
 const MongoClient = require('mongodb').MongoClient;
 const url = 'mongodb://localhost:27017';
 const assert = require('assert');
@@ -11,7 +13,5 @@ MongoClient.connect(url, {poolSize: 10, useNewUrlParser: true}, function (err, c
 });
 
 module.exports = function (cb) {
-
     cb(db)
-
 };

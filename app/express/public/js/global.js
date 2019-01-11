@@ -1,3 +1,5 @@
+'use strict';
+
 function getLocation() {
     $.post('/clearJSON',null,null,null);
     if (navigator.geolocation) {

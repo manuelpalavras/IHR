@@ -1,3 +1,5 @@
+'use strict';
+
 $.get(`/routes`, (routes) => {
     $.get("/cities", (cities) => {
         $.get("./partials/indexImage.html", (imageHtml) => {
@@ -12,7 +14,6 @@ $.get(`/routes`, (routes) => {
             for (let i = 0; i < routes.length; i++) {
                 do {
                     routesNumber = randomNumberBetween(routes.length);
-                    console.log(routesNumber)
                 } while (!values.contains(routes[routesNumber].Nome, routes.length));
 
                 $('#routes').append("<div class=\"container col-sm-3\">" + imageHtml + "</div>");

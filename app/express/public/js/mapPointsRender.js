@@ -1,5 +1,6 @@
+'use strict';
+
 $.get(`/route/${id}`, (route) => {
-    console.log(route);
     $("#PoI").append("<h4 id='title'></h4>")
     $("#title").html(route.Nome);
 

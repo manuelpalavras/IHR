@@ -1,7 +1,7 @@
 'use strict';
 
 const path = require('path');
-const debug = require('debug');
+// const debug = require('debug');
 const port = 8080;
 const express = require('express');
 const app = express();
@@ -28,7 +28,11 @@ const mainRouter = require('./routes/mainRouter');
 const indexViewController = require('./routes/indexViewController');
 const mapViewController = require('./routes/mapViewController');
 const filterViewController = require('./routes/filterViewController');
+const citiesRouter = require('./routes/citiesRouter');
+const routesRouter = require('./routes/routesRouter');
 
+app.use('/',citiesRouter);
+app.use('/',routesRouter);
 app.use('/', mainRouter);
 app.use('/', indexViewController);
 app.use('/', mapViewController);

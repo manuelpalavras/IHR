@@ -1,7 +1,9 @@
+'use strict';
+
 const express = require('express');
 const router = express.Router();
 const path = require('path');
-const dataRoutes = require('../models/dataBase');
+const dataBaseRoute = require('../models/databaseRoute');
 
 router.get('/filterPage.hbs', (req, res) => {
     res.redirect('/home');
@@ -36,7 +38,7 @@ router.get('/filter/:nome/:array1/:array2/:array3', (req, res) => {
     let classificacao = [].Arrayify(req.params.array2);
     let dificuldade = [].Arrayify(req.params.array3);
 
-    dataRoutes.getFilteredRoutes(nome,tipos,classificacao,dificuldade,(err,result) =>{
+    dataBaseRoute.getFilteredRoutes(nome,tipos,classificacao,dificuldade,(err,result) =>{
         res.send(result);
     })
 
